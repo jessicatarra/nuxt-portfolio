@@ -29,7 +29,7 @@
         >
         <small class="flex md:hidden"
           >© 2020 Jessica Tarra <br />
-          Made with ❤️ in Rio de Janeiro, Brazil</small
+          Made with ❤️ in Rio de Janeiro, Brazil.</small
         >
       </div>
     </div>
