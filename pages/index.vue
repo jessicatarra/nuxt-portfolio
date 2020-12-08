@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div>
+      <ColorModePicker />
       <Logo />
       <h1 class="title">nuxt-portfolio</h1>
       <div class="links">
@@ -26,7 +27,13 @@
 </template>
 
 <script>
-export default {}
+import ColorModePicker from '@/components/ColorModePicker'
+
+export default {
+  components: {
+    ColorModePicker,
+  },
+}
 </script>
 
 <style>
