@@ -1,37 +1,25 @@
 <template>
-  <div class="container">
-    <div>
-      <ColorModePicker />
-      <Logo />
-      <h1 class="title">nuxt-portfolio</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div>
+    <Navbar />
+        <main class="pt-16 sm:pl-64">
+            <div class="p-4">
+                <h1 class="text-xs uppercase tracking-wider">Content</h1>
+
+                <div v-for="i in Array(15).keys()" class="cards mt-4 p-4 rounded shadow font-semibold text-center hover:shadow-md">
+                    Match #{{ i }}
+                </div>
+            </div>
+        </main>
   </div>
 </template>
 
 <script>
-import ColorModePicker from '@/components/ColorModePicker'
+import Navbar from '@/components/Navbar'
+
 
 export default {
   components: {
-    ColorModePicker,
+    Navbar,
   },
 }
 </script>
@@ -43,15 +31,17 @@ export default {
 }
 */
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding: 0 var(--wrapperSpace);
+  max-width: calc(1115px + 1.5em);
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.title {
+.cards {
+  background-color: var(--bg-secondary);
+}
+/* .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
@@ -71,5 +61,5 @@ export default {
 
 .links {
   padding-top: 15px;
-}
+} */
 </style>
