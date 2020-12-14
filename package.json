@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "nuxt-i18n": "^6.15.4"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.0.2",

@@ -5,12 +5,6 @@
         <component :is="`icon-${color}`" @click="$colorMode.preference = color" :class="getClasses(color)" />
       </li>
     </ul>
-        <p>
-      <ColorScheme placeholder="..." tag="span">
-        Color mode: <b>{{ $colorMode.preference }}</b>
-        <span v-if="$colorMode.preference === 'system'">(<i>{{ $colorMode.value }}</i> mode detected)</span>
-      </ColorScheme>
-    </p>
   </div>
 </template>
 
@@ -72,6 +66,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 }
   ul li {
     display: inline-block;
