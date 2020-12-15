@@ -35,6 +35,9 @@ body {
     transition: background-color 0.3s;
 }
 a {
+    color: var(--color);
+}
+a:hover, a:active {
     color: var(--color-primary);
 }
   
