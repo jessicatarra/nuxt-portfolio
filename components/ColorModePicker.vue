@@ -1,5 +1,5 @@
 <template>
-  <div class="dark-mode-container">
+  <div class="hidden sm:block">
     <ul>
       <li v-for="color of colors" :key="color">
         <component :is="`icon-${color}`" @click="$colorMode.preference = color" :class="getClasses(color)" />

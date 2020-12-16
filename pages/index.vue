@@ -1,44 +1,31 @@
 <template>
   <div>
     <Navbar />
+    <Sidebar />
         <main class="pt-16 sm:pl-64">
-            <div class="p-4">
-                <h1 class="text-xs uppercase tracking-wider">Content</h1>
-
-                <div v-for="i in Array(15).keys()" class="cards mt-4 p-4 rounded shadow font-semibold text-center hover:shadow-md">
-                    Match #{{ i }}
-                </div>
-            </div>
+          <Hero />
         </main>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar'
+import Hero from '@/components/Hero'
+import Footer from '@/components/Footer'
 
 
 export default {
   components: {
     Navbar,
+    Sidebar,
+    Hero,
+    Footer
   },
 }
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  padding: 0 var(--wrapperSpace);
-  max-width: calc(1115px + 1.5em);
-  margin: auto;
-  width: 100%;
-  box-sizing: border-box;
-}
 
-.cards {
-  background-color: var(--bg-secondary);
-}
 </style>
