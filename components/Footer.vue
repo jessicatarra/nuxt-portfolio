@@ -1,32 +1,33 @@
 <template>
-    <footer class="relative footer-1 bg-gray-100 py-8 sm:py-12 z-50 w-full">  
-        <div>
-            <div class="fixed bottom-0 inset-x-0 z-50 bg-gray-300 flex justify-between items-center shadow-lg">
-                <a href="#">
-                    <IconLinkedin />
-                </a>
-                <a href="#">
-                    <IconGithub />
-                </a>
-                <a href="#">
-                    <IconInstagram />
-                </a>
-                <a href="#">
-                    <IconTwitter />
-                </a>
+    <footer class="relative icons-container sm:pl-64 z-10 pt-4 pb-4">  
+        <div class="wrapper flex flex-col">
+            <div class="pt-12 pb-8 flex flex-row justify-between">
+                <div class="flex flex-row space-x-4 my-auto ">
+                    <a href="https://linkedin.com/in/jessicatarra" target="_blank">
+                        <IconLinkedin />
+                    </a>
+                    <a href="https://github.com/jessicatarra" target="_blank">
+                        <IconGithub />
+                    </a>
+                    <a href="https://instagram.com/jessicatarra" target="_blank">
+                        <IconInstagram />
+                    </a>
+                    <a href="https://twitter.com/jessicatarra" target="_blank">
+                        <IconTwitter />
+                    </a>
 
+                </div>
+                <div class="flex flex-row space-x-8 my-auto">
+                    <a href="#" class="">
+                        <IconEmail width="25px" height="25px" />
+                    </a>
+                    <a class="text-bold text-xl" href="#">hi@jesta.dev</a>
+                </div>            
             </div>
-            <div class="ml-16 p-8 sm:w-64 flex justify-center flex-row align-middle">
-                <a href="#" class="block mx-auto text-orange-500 hover:text-yellow-500">
-                    <IconEmail />
-                </a>
-                <a class="email block text-lg pt-1 align-text-middle mx-auto tracking-wide text-orange-500 hover:text-yellow-500" href="#">hi@jesta.dev</a>
-            </div>            
+            <div class="flex justify-center text-center">
+                <small>Made with ❤️ in Rio de Janeiro, Brazil</small>
+            </div>
         </div>
-        <div class="bg-gray-300 flex flex-row">
-            
-        </div>
-
     </footer>
 </template>
 
@@ -55,6 +56,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+footer{
+    background-color: var(--bg);
+}
 
+.icons-container{
+    border-top: 2px solid var(--border-color);
+}
 </style>

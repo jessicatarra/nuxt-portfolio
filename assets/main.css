@@ -1,6 +1,6 @@
 :root {
     --color: #243746;
-    --color-primary: #ED8936;
+    --color-primary: #4C51BF;
     --color-secondary: #0e2233;
     --bg: #f3f5f4;
     --bg-secondary: #fff;
@@ -13,7 +13,7 @@
 
 .dark-mode {
     --color: #ebf4f1;
-    --color-primary: #ED8936;
+    --color-primary: #4C51BF;
     --color-secondary: #fdf9f3;
     --bg: #091a28;
     --bg-secondary: #071521;
@@ -47,3 +47,11 @@ a:hover, a:active {
     color: var(--color-primary);
 }
   
+.wrapper {
+    padding: 0 var(--wrapperSpace);
+    max-width: calc(1115px + 1.5em);
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
