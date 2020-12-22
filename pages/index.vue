@@ -4,9 +4,10 @@
     <Sidebar/>
         <main class="pt-16 sm:pl-64">
           <Hero />
+          <Cases />
           <OpenSource />
         </main>
-    <Footer data-aos="fade-up"/>
+    <Footer/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
 import Hero from '@/components/Hero'
+import Cases from '@/components/Cases'
 import OpenSource from '@/components/OpenSource'
 import Footer from '@/components/Footer'
 
@@ -23,6 +25,7 @@ export default {
     Navbar,
     Sidebar,
     Hero,
+    Cases,
     OpenSource,
     Footer
   },
