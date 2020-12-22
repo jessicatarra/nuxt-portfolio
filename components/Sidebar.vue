@@ -4,18 +4,13 @@
             <div class="p-4 min-h-full">
                 <div 
                     class="px-6 pb-6 flex items-center border-b border-100 sm:flex-col"
-                    data-aos="fade-right"
-                    data-aos-offset="500"
                 >
                     <div class="profile-image-container mr-auto flex-shrink-0 flex justify-center items-center rounded-full border-4 sm:mt-4 sm:mx-auto">
                         <img class="profile-image" src="../assets/images/jessica.jpg" alt="Jessica Tarra">
                     </div>
 
                 </div>
-                <Menu 
-                    data-aos="fade"
-                    data-aos-offset="500"
-                />
+                <Menu  />
             </div>
         </aside>  
     </div>
