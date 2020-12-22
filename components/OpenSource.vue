@@ -1,5 +1,5 @@
 <template>
-    <div class="relative">
+    <div class="relative" data-aos="fade-down" data-aos-duration="800">
         <IconCircleLeft class="absolute top-0 left-0"/>
         <div class="wrapper">
             <div class="md:pt-24 p-18 pb-24 flex flex-col justify-center space-y-8">

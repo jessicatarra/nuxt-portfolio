@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Navbar />
-    <Sidebar />
+    <Navbar/>
+    <Sidebar/>
         <main class="pt-16 sm:pl-64">
           <Hero />
           <OpenSource />
         </main>
-    <Footer />
+    <Footer data-aos="fade-up"/>
   </div>
 </template>
 

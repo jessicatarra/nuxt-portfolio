@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <div class="pt-24 pb-24 flex flex-col justify-center space-y-8">
+        <div class="pt-24 pb-24 flex flex-col justify-center space-y-8" data-aos="fade-down">
             <h1 class="text-center text-2xl md:text-3xl">Hi, I'm Jessica Tarra 👋</h1>
             <vue-typer  class="text-4xl md:text-6xl font-bold text-center" text='Hello World! I was registered locally!'></vue-typer>
             <h2 class="text-center text-xl md:text-2xl">I'm a <strong class="font-bold">Front-end Developer </strong>from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil.</h2>
