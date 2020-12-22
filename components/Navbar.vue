@@ -1,13 +1,13 @@
 <template>
     <header>
-        <nav class="fixed top-0 inset-x-0 z-50 h-16 text-indigo-100 bg-indigo-700 flex justify-between items-center shadow-lg">
-            <div class="ml-20 p-8 sm:w-64 flex justify-center flex-row align-middle">
+        <nav class="fixed top-0 inset-x-0 z-50 h-16 text-indigo-100 bg-indigo-700 flex justify-between items-center shadow-lg z-50">
+            <div class="ml-20 p-8 sm:w-64 flex justify-center flex-row align-middle" data-aos="fade-down">
                 <a href="#" class="block mx-auto text-white hover:text-white">
                     <IconEmail />
                 </a>
                 <a class="email block text-lg pt-1 align-text-middle mx-auto tracking-wide text-white hover:text-white ml-10" href="#">hi@jesta.dev</a>
             </div>
-            <div class="w-16 h-16 flex justify-center items-center sm:hidden">
+            <div class="w-16 h-16 flex justify-center items-center sm:hidden" data-aos="fade-down">
                 <button class="p-1" @click="isMenuOpen = !isMenuOpen">
                     <svg class="fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path v-if="!isMenuOpen" d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z" />
@@ -15,7 +15,7 @@
                     </svg>
                 </button>
             </div>
-            <ColorModePicker />
+            <ColorModePicker data-aos="fade-down"/>
         </nav>
         <Menu :class="isMenuOpen ? 'block' : 'hidden'"/>
     </header>
