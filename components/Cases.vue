@@ -1,9 +1,9 @@
 <template>
     <section id="cases" class="wrapper">
-        <div class="relative md:pt-24 p-18 pb-24 flex flex-col justify-center space-y-8">
+        <div class="relative md:pt-24 p-18 pb-24 flex flex-col justify-center space-y-4">
             <h2 class="text-left text-2xl md:text-3xl font-bold font-inter z-10">The work I do, <br> and business I help.</h2>
             <div>
-                <div class="overflow-hidden pt-8">
+                <div class="overflow-hidden pt-16">
                     <a href="https://dadoslegais.com/" target="_blank" class="cursor flex p-8 lg:p-16 rounded-md border bg-gradient-to-l from-blue-300 to-blue-600 ">
                         <div class="flex flex-col justify-between pr-2 lg:pr-18 space-y-6 ">
                             <h4 class="text-3xl md:text-4xl font-inter font-bold leading-none">Dados Legais Website</h4>
@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div>
-                <div class="overflow-hidden pt-8">
+                <div class="overflow-hidden pt-16">
                     <a href="#" target="_blank" class="cursor flex p-8 lg:p-16 rounded-md border bg-gradient-to-r from-orange-500 to-white">
                         <div class="flex flex-col justify-between pr-2 lg:pr-18 space-y-6 ">
                             <h4 class="text-3xl md:text-4xl font-inter font-bold leading-none">Miss 2.0</h4>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div>
-                <div class="overflow-hidden pt-8">
+                <div class="overflow-hidden pt-16">
                     <a href="https://gapasset.com.br/" target="_blank" class="cursor flex p-8 lg:p-16 rounded-md border bg-gradient-to-b from-gray-800 to-blue-500">
                         <div class="flex flex-col justify-between pr-2 lg:pr-18 space-y-6 ">
                             <h4 class="text-3xl md:text-4xl font-inter font-bold leading-none">Gap Asset</h4>

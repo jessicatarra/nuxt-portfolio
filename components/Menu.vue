@@ -14,7 +14,7 @@
             <li class="menu-item flex flex-row justify-start space-x-4"
             >
                 <IconServices />
-                <a class="font-bold tracking-tight" href="#">Services</a>
+                <a class="font-bold tracking-tight" href="#services">Services</a>
             </li>
             <li class="menu-item flex flex-row justify-start space-x-4"
             >
