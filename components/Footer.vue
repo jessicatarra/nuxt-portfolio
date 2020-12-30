@@ -18,14 +18,15 @@
 
                 </div>
                 <div class="flex flex-row space-x-8 my-auto">
-                    <a href="#" class="">
+                    <a href="#" class="hidden sm:block mt-1">
                         <IconEmail width="25px" height="25px" />
                     </a>
                     <a class="text-bold text-xl" href="#">hi@jesta.dev</a>
                 </div>            
             </div>
             <div class="flex justify-center text-center">
-                <small>© 2020 Jessica Tarra | Made with ❤️ in Rio de Janeiro, Brazil</small>
+                <small class="hidden md:flex">© 2020 Jessica Tarra - Made with ❤️ in Rio de Janeiro, Brazil</small>
+                <small class="flex md:hidden">© 2020 Jessica Tarra <br> Made with ❤️ in Rio de Janeiro, Brazil</small>
             </div>
         </div>
     </footer>

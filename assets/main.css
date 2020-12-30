@@ -4,6 +4,7 @@
     --color-secondary: #0e2233;
     --bg: #f3f5f4;
     --bg-secondary: #fff;
+    --bg-hover: rgba(255, 255, 255, 0);
     --border-color: #ddd;
 
     /*globals*/
@@ -17,6 +18,7 @@
     --color-secondary: #fdf9f3;
     --bg: #091a28;
     --bg-secondary: #071521;
+    --bg-hover: #07152100;
     --border-color: #0d2538;
 }
 .sepia-mode {
@@ -24,6 +26,7 @@
     --color-secondary: #504231;
     --bg: #f1e7d0;
     --bg-secondary: #eae0c9;
+    --bg-hover:  #eae0c900;
     --border-color: #ded0bf;
 }
 @font-face {

@@ -2,8 +2,9 @@
   <div>
     <Navbar/>
     <Sidebar/>
-        <main class="pt-16 sm:pl-64">
+        <main class="pt-16 md:pl-64">
           <Hero />
+          <Services />
           <Cases />
           <OpenSource />
         </main>
@@ -15,6 +16,7 @@
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
 import Hero from '@/components/Hero'
+import Services from '@/components/Services'
 import Cases from '@/components/Cases'
 import OpenSource from '@/components/OpenSource'
 import Footer from '@/components/Footer'
@@ -25,6 +27,7 @@ export default {
     Navbar,
     Sidebar,
     Hero,
+    Services,
     Cases,
     OpenSource,
     Footer
