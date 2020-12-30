@@ -1,6 +1,6 @@
 <template>
     <header>
-        <nav class="fixed top-0 w-full h-16 text-indigo-100 bg-indigo-700 flex justify-between items-center shadow-lg z-50">
+        <nav class="relative md:fixed top-0 w-full h-16 text-indigo-100 bg-indigo-700 flex justify-between items-center shadow-lg z-50">
             <div class="ml-0 md:ml-20 p-8 sm:w-64 flex justify-center flex-row align-middle">
                 <a href="#" class="hidden sm:block mx-auto text-white hover:text-white">
                     <IconEmail />
@@ -15,7 +15,7 @@
                     </svg>
                 </button>
             </div>
-            <ColorModePicker class="p-8"/>
+            <ColorModePicker class="p-8 hidden sm:block"/>
         </nav>
         <Menu :class="isMenuOpen ? 'block' : 'hidden'"/>
     </header>
