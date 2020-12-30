@@ -18,14 +18,14 @@
             </li>
             <li class="menu-item flex flex-row justify-start space-x-4"
             >
-                <IconExperience />
-                <a class="font-bold tracking-tight" href="#">Experience</a>
-
+                <IconCases />
+                <a class="font-bold tracking-tight" href="#cases">Cases</a>
             </li>
             <li class="menu-item flex flex-row justify-start space-x-4"
             >
-                <IconCases />
-                <a class="font-bold tracking-tight" href="#">Cases</a>
+                <IconExperience />
+                <a class="font-bold tracking-tight" href="#open-source">Experience</a>
+
             </li>
             <li class="menu-item flex flex-row justify-start space-x-4"
             >

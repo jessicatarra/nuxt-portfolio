@@ -25,7 +25,7 @@
                 </div>            
             </div>
             <div class="flex justify-center text-center">
-                <small>Made with ❤️ in Rio de Janeiro, Brazil</small>
+                <small>© 2020 Jessica Tarra | Made with ❤️ in Rio de Janeiro, Brazil</small>
             </div>
         </div>
     </footer>
