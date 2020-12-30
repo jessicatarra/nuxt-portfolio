@@ -1,6 +1,6 @@
 <template>
     <section id="hero" class="wrapper">
-        <div class="pt-24 md:pt-48 pb-24 flex flex-col justify-center space-y-8 md:space-y-16">
+        <div class="pt-8 md:pt-48 pb-24 flex flex-col justify-center space-y-8 md:space-y-16">
             <h1 class="text-center text-2xl md:text-4xl">Hi, I'm Jessica Tarra 👋</h1>
             <vue-typer  class="text-5xl md:text-8xl font-bold text-center" text='Building awesome software experiences!'></vue-typer>
             <h2 class="text-center text-2xl md:text-3xl">I'm a <strong class="font-bold">Front-end Developer </strong>from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil.</h2>

@@ -1,6 +1,6 @@
 <template>
-    <div class="menu absolute w-full z-10">
-        <ul class="flex flex-col space-y-4 mx-8 sm:mt-4 sm:py-1 mt-24 py-2 mb-12">
+    <div class="fixed sm:inherit menu absolute w-full h-full sm:h-auto z-40 sm:z-30">
+        <ul class="flex flex-col space-y-8 sm:space-y-4 mx-8 sm:mt-4 sm:py-1 mt-8 py-2 mb-8">
             <li class="menu-item flex flex-row justify-start space-x-4"
             >
                 <IconHome/>
@@ -38,11 +38,15 @@
                 <a class="font-bold tracking-tight" href="#">Contact</a>
             
             </li>
+            <li>
+                <ColorModePicker class="block sm:hidden"/>
+            </li>
         </ul>
     </div>
 </template>
 
 <script>
+import ColorModePicker from '@/components/ColorModePicker'
 import IconHome from '@/assets/icons/home.svg?inline'
 import IconAbout from '@/assets/icons/about.svg?inline'
 import IconServices from '@/assets/icons/services.svg?inline'
@@ -54,6 +58,7 @@ import IconContact from '@/assets/icons/contact.svg?inline'
 export default {
     
     components: {
+        ColorModePicker,
         IconHome,
         IconAbout,
         IconServices,

@@ -1,7 +1,7 @@
 <template>
-  <div class="hidden sm:block">
-    <ul>
-      <li v-for="color of colors" :key="color">
+  <div>
+    <ul class="flex flex-row justify-left text-center list-none p-0 m-0 sm:justify-center">
+      <li class="inline-block p-1" v-for="color of colors" :key="color">
         <component :is="`icon-${color}`" @click="$colorMode.preference = color" :class="getClasses(color)" />
       </li>
     </ul>
@@ -59,23 +59,5 @@
   }
   .feather.selected {
     color: var(--color-primary);
-  }
-  ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-}
-  ul li {
-    display: inline-block;
-    padding: 5px;
-  }
-  p {
-    margin: 0;
-    padding-top: 5px;
-    padding-bottom: 20px;
   }
 </style>
