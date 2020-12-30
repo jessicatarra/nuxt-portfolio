@@ -1,6 +1,6 @@
 <template>
-    <div class="relative">
-        <IconCircleLeft class="absolute top-0 left-0"/>
+    <section id="open-source" class="relative">
+        <IconCircleLeft class="absolute top-0 left-0 max-w-full"/>
         <div class="wrapper">
             <div class="md:pt-24 p-18 pb-24 flex flex-col justify-center space-y-8">
                 <h2 class="text-left text-2xl md:text-3xl font-bold font-inter z-10">OSS Contributions</h2>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <IconCircleRight class="absolute xl:flex hidden top-0 right-0"/>
-    </div>
+    </section>
 
 </template>
 
