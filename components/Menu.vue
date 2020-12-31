@@ -35,7 +35,7 @@
             <li class="menu-item flex flex-row justify-start space-x-4"
             >
                 <IconContact />
-                <a class="font-bold tracking-tight" href="#">Contact</a>
+                <a class="font-bold tracking-tight" href="contact">Contact</a>
             
             </li>
             <li>

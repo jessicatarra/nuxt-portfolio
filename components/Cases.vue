@@ -1,7 +1,7 @@
 <template>
     <section id="cases" class="wrapper">
         <div class="relative md:pt-24 p-18 pb-24 flex flex-col justify-center space-y-4">
-            <h2 class="text-left text-2xl md:text-3xl font-bold font-inter z-10">The work I do, <br> and business I help.</h2>
+            <h2 class="text-left text-3xl md:text-4xl font-bold font-inter z-10">The work I do, <br> and business I help.</h2>
             <div>
                 <div class="overflow-hidden pt-16">
                     <a href="https://dadoslegais.com/" target="_blank" class="cursor flex p-8 lg:p-16 rounded-md border bg-gradient-to-l from-blue-300 to-blue-600 ">

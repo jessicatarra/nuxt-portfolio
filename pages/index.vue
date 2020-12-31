@@ -7,6 +7,7 @@
           <Services />
           <Cases />
           <OpenSource />
+          <Contact />
         </main>
     <Footer/>
   </div>
@@ -19,6 +20,7 @@ import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import Cases from '@/components/Cases'
 import OpenSource from '@/components/OpenSource'
+import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 
@@ -30,6 +32,7 @@ export default {
     Services,
     Cases,
     OpenSource,
+    Contact,
     Footer
   },
 }
