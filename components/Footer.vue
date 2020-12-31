@@ -18,10 +18,10 @@
 
                 </div>
                 <div class="flex flex-row space-x-8 my-auto">
-                    <a href="#" class="hidden sm:block mt-1">
+                    <a href="/" class="hidden sm:block mt-1">
                         <IconEmail width="25px" height="25px" />
                     </a>
-                    <a class="text-bold text-xl" href="#">hi@jesta.dev</a>
+                    <a class="text-bold text-xl" href="/">hi@jesta.dev</a>
                 </div>            
             </div>
             <div class="flex justify-center text-center">
