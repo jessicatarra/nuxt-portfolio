@@ -30,7 +30,7 @@
             <li class="menu-item flex flex-row justify-start space-x-4"
             >
                 <IconBlog />
-                <a class="font-bold tracking-tight" href="#">Blog</a>
+                <a class="font-bold tracking-tight" href="/#blog">Blog</a>
             </li>
             <li class="menu-item flex flex-row justify-start space-x-4"
             >
