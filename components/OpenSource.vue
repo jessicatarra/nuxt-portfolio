@@ -2,9 +2,9 @@
     <section id="open-source" class="relative">
         <IconCircleLeft class="absolute top-0 left-0 max-w-full"/>
         <div class="wrapper">
-            <div class="md:pt-24 p-18 pb-24 flex flex-col justify-center space-y-8">
+            <div class="md:pt-24 pt-18 pb-24 flex flex-col justify-center space-y-8">
                 <h2 class="text-left text-3xl md:text-4xl font-bold font-inter z-10">OSS Contributions</h2>
-                <p class="leading-loose text-lg mb-12 md:w-112 z-10">A compilation of my Open Source projects on GitHub. Vuejs, Reactjs and Vanilla Javascript.</p>
+                <p class="leading-loose text-lg mb-12 md:w-112 pt-8 z-10">A compilation of my Open Source projects on GitHub. Vuejs, Reactjs and Vanilla Javascript.</p>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <a target="_blank" href="https://github.com/jessicatarra/react-game" class="card-grid focus:outline-none rounded-md px-6 py-5  transition duration-700 ease-in-out z-10">
                         <span class="inline-block font-inter font-bold text-lg mb-2">React Game</span>
