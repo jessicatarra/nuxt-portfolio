@@ -9,6 +9,57 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'Jessica Tarra - Developer'
+      },
+      { 
+        hid: 'twitter:site', 
+        name: 'twitter:site', 
+        content: '@jessicatarra' 
+      },
+      { 
+        hid: 'twitter:creator', 
+        name: 'twitter:creator', 
+        content: '@jessicatarra' 
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Jessica Tarra - Developer'
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: ''
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '/jessica.jpg'
+      },
+      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/jessica.jpg'
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: 'Jessica Tarra - Developer'
+      },
+      { 
+        hid: 'og:title', 
+        name: 'og:title', 
+        content: 'Jessica Tarra - Developer' 
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: ''
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
