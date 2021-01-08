@@ -8,21 +8,21 @@
                         <WebDev width="6rem" />
                     </div>
                     <span class="inline-block text-lg font-bold mb-2">Web Development</span>
-                    <p class="leading-loose dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quisquam, neque ipsum ab.</p>
+                    <p class="leading-loose dark:text-gray-300"></p>
                 </div>
                 <div class="cursor-pointer transition duration-700 ease-in-out services-card md:col-span-2 lg:col-span-1 flex flex-col justify-center text-center py-8 xl:py-16 px-4 xl:px-8 rounded-md focus:outline-none">
                     <div class="bg-yellow-500 w-20 h-20 p-4 rounded-2xl flex justify-center align-middle mx-auto mb-8">
                         <App width="6rem"/>
                     </div>
                     <span class="inline-block text-lg font-bold mb-2">App Development</span>
-                    <p class="leading-loose dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fugit consequuntur voluptatum.</p>
+                    <p class="leading-loose dark:text-gray-300"></p>
                 </div>
                 <div class="cursor-pointer transition duration-700 ease-in-out services-card md:col-span-2 lg:col-span-1 flex flex-col justify-center text-center py-8 xl:py-16 px-4 xl:px-8 rounded-md focus:outline-none">
                     <div class="bg-red-500 w-20 h-20 p-4 rounded-2xl flex justify-center align-middle mx-auto mb-8">
                         <Test width="6rem"/>
                     </div>
                     <span class="inline-block text-lg font-bold mb-2">QA Testing</span>
-                    <p class="leading-loose dark:text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora earum explicabo odio.</p>
+                    <p class="leading-loose dark:text-gray-300"></p>
                 </div>
             </div>
         </div>

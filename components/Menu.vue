@@ -6,11 +6,11 @@
                 <IconHome/>
                 <a class="font-bold tracking-tight" href="#">Home</a>
             </li>
-            <li class="menu-item flex flex-row justify-start space-x-4"
+            <!-- <li class="menu-item flex flex-row justify-start space-x-4"
             >
                 <IconAbout />
                 <a class="font-bold tracking-tight" href="#">About</a>
-            </li>
+            </li> -->
             <li class="menu-item flex flex-row justify-start space-x-4"
             >
                 <IconServices />
