@@ -7,8 +7,19 @@ export default {
     title: 'Jessica Tarra - Developer',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { 
+        name: 'viewport', 
+        content: 'width=device-width, initial-scale=1' 
+      },
+      { 
+        name: 'keywords', 
+        content: 'web developer, software developer, front end developer, freelance web developer, wordpress developer, developer, web developer portfolio, web developer resume, javascript, vue js, react, nuxt js, next js, strapi, headless cms, wordpress, aws, npm, cypress, qa tester, test, end to end test'
+      },
+      { 
+        hid: 'description', 
+        name: 'description', 
+        content: 'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.' 
+      },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
@@ -32,18 +43,22 @@ export default {
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: ''
+        content: 'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.'
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '/jessica.jpg'
+        content: 'assets/images/jessica.jpg'
       },
-      { hid: 'description', name: 'description', content: '' },
+      { 
+        hid: 'description', 
+        name: 'description', 
+        content: 'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.' 
+      },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/jessica.jpg'
+        content: 'assets/images/jessica.jpg'
       },
       {
         hid: 'og:site_name',
@@ -58,7 +73,7 @@ export default {
       {
         hid: 'og:description',
         name: 'og:description',
-        content: ''
+        content: 'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
