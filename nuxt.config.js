@@ -48,7 +48,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'assets/images/jessica.jpg'
+        content: '/assets/images/jessica.jpg'
       },
       { 
         hid: 'description', 
@@ -58,7 +58,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'assets/images/jessica.jpg'
+        content: '/assets/images/jessica.jpg'
       },
       {
         hid: 'og:site_name',
