@@ -17,7 +17,7 @@
             </div>
             <div>
                 <div class="overflow-hidden pt-16">
-                    <a href="#" target="_blank" class="cursor flex p-8 lg:p-16 rounded-md border bg-gradient-to-r from-orange-500 to-white">
+                    <a href="https://ci.miss20.org/" target="_blank" class="cursor flex p-8 lg:p-16 rounded-md border bg-gradient-to-r from-orange-500 to-white">
                         <div class="flex flex-col justify-between pr-2 lg:pr-18 space-y-6 ">
                             <h4 class="text-3xl md:text-4xl font-inter font-bold leading-none">Miss 2.0</h4>
                             <p class="leading-loose mr-4 text-lg">MISS2.0 is the first entirely digital competition organised for young Cotê d'Ivoire women.<br> Technologies: Wordpress and PHP.</p>
