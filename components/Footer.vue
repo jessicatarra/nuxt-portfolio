@@ -21,7 +21,7 @@
                     <a href="/" class="hidden sm:block mt-1">
                         <IconEmail width="25px" height="25px" />
                     </a>
-                    <a class="text-bold text-xl" href="/">hi@tarralva.com</a>
+                    <a class="text-bold text-xl" href="/">jessica@tarralva.com</a>
                 </div>            
             </div>
             <div class="flex justify-center text-center">

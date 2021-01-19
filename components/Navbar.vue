@@ -5,7 +5,7 @@
                 <a href="/" class="hidden sm:block mx-auto text-white hover:text-white">
                     <IconEmail />
                 </a>
-                <a class="email block text-lg pt-1 align-text-middle mx-auto tracking-wide text-white hover:text-white ml-0 sm:ml-10" href="/">hi@tarralva.com</a>
+                <a class="email block text-lg pt-1 align-text-middle mx-auto tracking-wide text-white hover:text-white ml-0 sm:ml-10" href="/">jessica@tarralva.com</a>
             </div>
             <div class="w-16 h-16 flex justify-center items-center sm:hidden">
                 <button class="p-1" @click="isMenuOpen = !isMenuOpen">
