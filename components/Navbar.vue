@@ -1,8 +1,8 @@
 <template>
     <header>
         <nav class="relative md:fixed top-0 w-full h-16 text-indigo-100 bg-indigo-700 flex justify-between items-center shadow-lg z-50">
-            <div class="ml-0 md:ml-20 p-8 sm:w-64 flex justify-center flex-row align-middle">
-                <a href="/" class="hidden sm:block mx-auto text-white hover:text-white">
+            <div class="icon p-8 sm:w-64 flex justify-center flex-row align-middle">
+                <a href="/" class="hidden md:block mx-auto text-white hover:text-white">
                     <IconEmail />
                 </a>
                 <a class="email block text-lg pt-1 align-text-middle mx-auto tracking-wide text-white hover:text-white ml-0 sm:ml-10" href="/">jessica@tarralva.com</a>
@@ -55,5 +55,13 @@ export default {
 .max-h-screen {
     max-height: 100vh;
     max-height: -webkit-fill-available;
+}
+.icon {
+    margin-left: 7rem;
+}
+@media (max-width: 768px) {
+    .icon {
+        margin-left: 0;
+    }
 }
 </style>
