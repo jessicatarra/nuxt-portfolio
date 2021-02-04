@@ -54,7 +54,7 @@ a:hover, a:active {
 .wrapper {
     padding: 0 var(--wrapperSpace);
     max-width: calc(1115px + 1.5em);
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
     box-sizing: border-box;    
 }

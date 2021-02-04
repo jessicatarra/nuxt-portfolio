@@ -10,7 +10,7 @@
                     </span>
                 </div>
                 <div class="hidden xl:block w-3/6 flex-shrink-0 relative hover:-translate-y-6 transform transition duration-500 ease-in-out">
-                    <ComingSoon class="coming-svg hidden xl:block absolute rounded max-w-max block" />
+                    <!-- <ComingSoon class="coming-svg hidden xl:block absolute rounded max-w-max block" /> -->
                 </div>
            </div>
         </div>
@@ -44,8 +44,8 @@ export default {
         border-bottom-color: var(--color-primary);
     }
     .coming-svg {
-        width: 90rem;
-        height: 25rem;
+        width: auto;
+        height: auto;
         top:-8rem;
         left:-4rem;
     }
