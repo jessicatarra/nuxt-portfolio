@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Navbar/>
-    <Sidebar/>
-        <main class="pt-16 md:pl-64">
-          <Hero />
-          <Services />
-          <Cases />
-          <OpenSource />
-          <Blog />
-          <Contact />
-        </main>
-    <Footer/>
+    <Navbar />
+    <Sidebar />
+    <main class="pt-16 md:pl-64">
+      <Hero />
+      <Services />
+      <Cases />
+      <OpenSource />
+      <Blog />
+      <Contact />
+    </main>
+    <Footer />
   </div>
 </template>
 
@@ -25,7 +25,6 @@ import Blog from '@/components/Blog'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
-
 export default {
   components: {
     Navbar,
@@ -36,11 +35,9 @@ export default {
     OpenSource,
     Blog,
     Contact,
-    Footer
+    Footer,
   },
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
