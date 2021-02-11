@@ -1,6 +1,6 @@
 export default {
   googleAnalytics: {
-    id: 232349717,
+    id: 'G-06JE71HEXT',
   },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
