@@ -1,60 +1,61 @@
 :root {
-    --color: #243746;
-    --color-primary: #4C51BF;
-    --color-secondary: #0e2233;
-    --bg: #f3f5f4;
-    --bg-secondary: #fff;
-    --bg-hover: rgba(255, 255, 255, 0);
-    --border-color: #ddd;
+  --color: #243746;
+  --color-primary: #4c51bf;
+  --color-secondary: #0e2233;
+  --bg: #f3f5f4;
+  --bg-secondary: #fff;
+  --bg-hover: rgba(255, 255, 255, 0);
+  --border-color: #ddd;
 
-    /*globals*/
-    font-size: 16px;
-    --wrapperSpace: 1.5em;
+  /*globals*/
+  font-size: 16px;
+  --wrapperSpace: 1.5em;
 }
 
 .dark-mode {
-    --color: #ebf4f1;
-    --color-primary: #4C51BF;
-    --color-secondary: #fdf9f3;
-    --bg: #091a28;
-    --bg-secondary: #071521;
-    --bg-hover: #07152100;
-    --border-color: #0d2538;
+  --color: #ebf4f1;
+  --color-primary: #4c51bf;
+  --color-secondary: #fdf9f3;
+  --bg: #091a28;
+  --bg-secondary: #071521;
+  --bg-hover: #07152100;
+  --border-color: #0d2538;
 }
 .sepia-mode {
-    --color: #433422;
-    --color-secondary: #504231;
-    --bg: #f1e7d0;
-    --bg-secondary: #eae0c9;
-    --bg-hover:  #eae0c900;
-    --border-color: #ded0bf;
+  --color: #433422;
+  --color-secondary: #504231;
+  --bg: #f1e7d0;
+  --bg-secondary: #eae0c9;
+  --bg-hover: #eae0c900;
+  --border-color: #ded0bf;
 }
 @font-face {
-    font-family: "Jakarta";
-    src: local("Jakarta"),
-     url(~assets/fonts/PlusJakartaSans-Regular.ttf) format("truetype");
+  font-family: 'Jakarta';
+  src: local('Jakarta'),
+    url(~assets/fonts/PlusJakartaSans-Regular.ttf) format('truetype');
 }
 
 html {
-    font-family: "Jakarta";
-    scroll-behavior: smooth;
+  font-family: 'Jakarta';
+  scroll-behavior: smooth;
 }
 body {
-    background-color: var(--bg);
-    color: var(--color);
-    transition: background-color 0.3s;
+  background-color: var(--bg);
+  color: var(--color);
+  transition: background-color 0.3s;
 }
 a {
-    color: var(--color);
+  color: var(--color);
 }
-a:hover, a:active {
-    color: var(--color-primary);
+a:hover,
+a:active {
+  color: var(--color-primary);
 }
-  
+
 .wrapper {
-    padding: 0 var(--wrapperSpace);
-    max-width: calc(1115px + 1.5em);
-    margin: auto;
-    width: 100%;
-    box-sizing: border-box;    
+  padding: 0 var(--wrapperSpace);
+  max-width: calc(1115px + 1.5em);
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
