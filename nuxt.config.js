@@ -54,7 +54,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '/assets/images/jessica.jpg',
+        content: 'https://www.tarralva.com/_nuxt/img/jessica.0089a1d.jpg',
       },
       {
         hid: 'description',
@@ -65,7 +65,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/assets/images/jessica.jpg',
+        content: 'https://www.tarralva.com/_nuxt/img/jessica.0089a1d.jpg',
       },
       {
         hid: 'og:site_name',
