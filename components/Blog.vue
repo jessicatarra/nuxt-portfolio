@@ -14,7 +14,6 @@
             class="span cursor-pointer line-through inline-flex items-center text-white font-semibold tracking-wide"
           >
             <span class="mr-2">Coming Soon</span>
-            <ArrowRight />
           </span>
         </div>
         <div
