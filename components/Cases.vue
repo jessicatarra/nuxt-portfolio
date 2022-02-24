@@ -21,7 +21,7 @@
                 Help Me Feed Foundation
               </h4>
               <p class="leading-loose mr-4 text-lg">
-                Not-for-profit foundation that supports the health of babies and parents globally.
+                Not-for-profit foundation that supports the health of babies and parents globally. <br/>
                 Technologies: React, React Native, Typescript and AWS
               </p>
             </div>
