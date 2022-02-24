@@ -10,6 +10,36 @@
       <div>
         <div class="overflow-hidden pt-16">
           <a
+            href="https://app.helpmefeed.org/"
+            target="_blank"
+            class="cursor flex p-8 lg:p-16 rounded-md border bg-gradient-to-l from-green-400 to-purple-400"
+          >
+            <div class="flex flex-col justify-between pr-2 lg:pr-18 space-y-6">
+              <h4
+                class="text-3xl md:text-4xl font-inter font-bold leading-none"
+              >
+                Help Me Feed Foundation
+              </h4>
+              <p class="leading-loose mr-4 text-lg">
+                Not-for-profit foundation that supports the health of babies and parents globally. <br/>
+                Technologies: React, React Native, Typescript and AWS
+              </p>
+            </div>
+            <div
+              class="hidden xl:block w-3/6 flex-shrink-0 relative hover:-translate-y-6 transform transition duration-500 ease-in-out"
+            >
+              <img
+                class="website-img absolute rounded max-w-max block"
+                src="../assets/images/hmf.png"
+                alt=""
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="overflow-hidden pt-16">
+          <a
             href="https://dadoslegais.com/"
             target="_blank"
             class="cursor flex p-8 lg:p-16 rounded-md border bg-gradient-to-l from-blue-300 to-blue-600"

@@ -27,7 +27,7 @@
             <App width="6rem" />
           </div>
           <span class="inline-block text-lg font-bold mb-2"
-            >App Development</span
+            >Mobile Development</span
           >
           <p class="leading-loose dark:text-gray-300"></p>
         </div>
