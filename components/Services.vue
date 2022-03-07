@@ -6,40 +6,48 @@
       </h2>
       <div class="grid md:grid-cols-4 lg:grid-cols-3 gap-10 pt-8">
         <div
-          class="cursor-pointer transition duration-700 ease-in-out services-card md:col-span-2 lg:col-span-1 flex flex-col justify-center text-center py-8 xl:py-16 px-4 xl:px-8 rounded-md focus:outline-none"
+          v-for="service in services"
+          :key="service.id"
+          class="
+            cursor-pointer
+            transition
+            duration-700
+            ease-in-out
+            services-card
+            md:col-span-2
+            lg:col-span-1
+            flex flex-col
+            justify-center
+            text-center
+            py-8
+            xl:py-16
+            px-4
+            xl:px-8
+            rounded-md
+            focus:outline-none
+          "
         >
           <div
-            class="bg-green-500 w-20 h-20 p-4 rounded-2xl flex justify-center align-middle mx-auto mb-8"
+            class="
+              w-20
+              h-20
+              p-4
+              rounded-2xl
+              flex
+              justify-center
+              align-middle
+              mx-auto
+              mb-8
+            "
+            :class="service.color"
           >
-            <WebDev width="6rem" />
+            <WebDev v-if="service.id == 0"></WebDev>
+            <App v-else-if="service.id == 1"></App>
+            <Test v-else></Test>
           </div>
-          <span class="inline-block text-lg font-bold mb-2"
-            >Web Development</span
-          >
-          <p class="leading-loose dark:text-gray-300"></p>
-        </div>
-        <div
-          class="cursor-pointer transition duration-700 ease-in-out services-card md:col-span-2 lg:col-span-1 flex flex-col justify-center text-center py-8 xl:py-16 px-4 xl:px-8 rounded-md focus:outline-none"
-        >
-          <div
-            class="bg-yellow-500 w-20 h-20 p-4 rounded-2xl flex justify-center align-middle mx-auto mb-8"
-          >
-            <App width="6rem" />
-          </div>
-          <span class="inline-block text-lg font-bold mb-2"
-            >Mobile Development</span
-          >
-          <p class="leading-loose dark:text-gray-300"></p>
-        </div>
-        <div
-          class="cursor-pointer transition duration-700 ease-in-out services-card md:col-span-2 lg:col-span-1 flex flex-col justify-center text-center py-8 xl:py-16 px-4 xl:px-8 rounded-md focus:outline-none"
-        >
-          <div
-            class="bg-red-500 w-20 h-20 p-4 rounded-2xl flex justify-center align-middle mx-auto mb-8"
-          >
-            <Test width="6rem" />
-          </div>
-          <span class="inline-block text-lg font-bold mb-2">QA Testing</span>
+          <span class="inline-block text-lg font-bold mb-2">{{
+            service.name
+          }}</span>
           <p class="leading-loose dark:text-gray-300"></p>
         </div>
       </div>
@@ -59,7 +67,25 @@ export default {
     App,
   },
   data() {
-    return {}
+    return {
+      services: [
+        {
+          id: 0,
+          name: 'Web Development',
+          color: 'bg-green-500',
+        },
+        {
+          id: 1,
+          name: 'Mobile Development',
+          color: 'bg-yellow-500',
+        },
+        {
+          id: 2,
+          name: 'QA Testing',
+          color: 'bg-red-500',
+        },
+      ],
+    }
   },
 }
 </script>
