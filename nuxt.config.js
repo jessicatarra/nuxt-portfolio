@@ -60,12 +60,12 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '/jessica.jpg',
+        content: 'https://www.tarralva.com/_nuxt/img/jessica.94924ca.jpg',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/jessica.jpg',
+        content: 'https://www.tarralva.com/_nuxt/img/jessica.94924ca.jpg',
       },
       {
         name: 'og:site_name',
