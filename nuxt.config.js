@@ -1,12 +1,15 @@
 export default {
-  googleAnalytics: {
-    id: 'G-06JE71HEXT',
-  },
+  // googleAnalytics: {
+  //   id: 'G-06JE71HEXT',
+  // },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
+    htmlAttrs: {
+      lang: 'en-US',
+    },
     title: 'Jessica Tarra - Developer',
     meta: [
       { charset: 'utf-8' },
@@ -26,12 +29,15 @@ export default {
           'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
       },
       {
-        hid: 'twitter:card',
         name: 'twitter:card',
         content: 'Jessica Tarra - Developer',
       },
       {
-        hid: 'twitter:site',
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://tarralva.com',
+      },
+      {
         name: 'twitter:site',
         content: '@jessicatarra',
       },
@@ -54,24 +60,19 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://www.tarralva.com/_nuxt/img/jessica.94924ca.jpg',
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content:
-          'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
+        content: '/jessica.jpg',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://www.tarralva.com/_nuxt/img/jessica.94924ca.jpg',
+        content: '/jessica.jpg',
       },
       {
-        hid: 'og:site_name',
         name: 'og:site_name',
         content: 'Jessica Tarra - Developer',
       },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+
       {
         hid: 'og:title',
         name: 'og:title',
@@ -84,7 +85,14 @@ export default {
           'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: 'https://tarralva.com',
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -107,7 +115,7 @@ export default {
     '@nuxtjs/color-mode',
     //svg-nuxt
     '@nuxtjs/svg',
-    '@nuxtjs/google-analytics',
+    // '@nuxtjs/google-analytics',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
