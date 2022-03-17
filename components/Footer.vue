@@ -25,11 +25,11 @@
       </div>
       <div class="flex justify-center text-center">
         <small class="hidden md:flex"
-          >© 2020 Jessica Tarra - Made with ❤️ in Rio de Janeiro, Brazil</small
+          >© 2020 Jessica Tarra - Made with ❤️ in 🇧🇷</small
         >
         <small class="flex md:hidden"
           >© 2020 Jessica Tarra <br />
-          Made with ❤️ in Rio de Janeiro, Brazil.</small
+          Made with ❤️ in 🇧🇷</small
         >
       </div>
     </div>
