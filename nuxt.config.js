@@ -13,6 +13,7 @@ export default {
     title: 'Jessica Tarra - Developer',
     meta: [
       { charset: 'utf-8' },
+      //  HTML Meta Tags
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1',
@@ -28,6 +29,7 @@ export default {
         content:
           'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
       },
+      //Twitter Meta Tags
       {
         name: 'twitter:card',
         content: 'summary_large_image',
@@ -62,6 +64,7 @@ export default {
         name: 'twitter:image',
         content: 'https://www.tarralva.com/_nuxt/img/jessica.94924ca.jpg',
       },
+      //Facebook Meta Tags
       { property: 'og:image:type', content: 'image/jpeg' },
       { property: 'og:image:width', content: '400' },
       { property: 'og:image:height', content: '300' },
@@ -87,6 +90,7 @@ export default {
           'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
       },
     ],
+    //Favicon
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
