@@ -30,7 +30,7 @@ export default {
       },
       {
         name: 'twitter:card',
-        content: 'Jessica Tarra - Developer',
+        content: 'summary_large_image',
       },
       {
         hid: 'twitter:url',
@@ -62,6 +62,9 @@ export default {
         name: 'twitter:image',
         content: 'https://www.tarralva.com/_nuxt/img/jessica.94924ca.jpg',
       },
+      { property: 'og:image:type', content: 'image/jpeg' },
+      { property: 'og:image:width', content: '400' },
+      { property: 'og:image:height', content: '300' },
       {
         hid: 'og:image',
         property: 'og:image',
@@ -72,7 +75,6 @@ export default {
         content: 'Jessica Tarra - Developer',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-
       {
         hid: 'og:title',
         name: 'og:title',
