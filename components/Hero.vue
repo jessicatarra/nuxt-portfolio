@@ -9,7 +9,7 @@
         text="Building awesome software experiences!"
       ></vue-typer>
       <h2 class="text-center text-2xl md:text-4xl">
-        I'm a <strong class="font-bold">Software Engineer </strong>from
+        I'm a <strong class="font-bold">Software Developer </strong>from
         Cartagena, Colombia and currently living in Rio de Janeiro, Brazil.
       </h2>
       <button
