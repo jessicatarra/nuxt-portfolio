@@ -62,7 +62,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://www.tarralva.com/_nuxt/img/thumbnail.png',
+        content: 'https://www.tarralva.com/_nuxt/img/thumbnail.bf9052c.png',
       },
       //Facebook Meta Tags
       { property: 'og:image:type', content: 'image/jpeg' },
@@ -71,7 +71,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://www.tarralva.com/_nuxt/img/thumbnail.png',
+        content: 'https://www.tarralva.com/_nuxt/img/thumbnail.bf9052c.png',
       },
       {
         name: 'og:site_name',
