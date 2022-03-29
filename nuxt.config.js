@@ -10,7 +10,7 @@ export default {
     htmlAttrs: {
       lang: 'en-US',
     },
-    title: 'Jessica Tarra - Developer',
+    title: 'Jessica Tarra | Software Developer',
     meta: [
       { charset: 'utf-8' },
       //  HTML Meta Tags
@@ -27,7 +27,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
+          'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Software Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
       },
       //Twitter Meta Tags
       {
@@ -51,18 +51,18 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Jessica Tarra - Developer',
+        content: 'Jessica Tarra | Software Developer',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
+          'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Software Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://www.tarralva.com/_nuxt/img/jessica.94924ca.jpg',
+        content: 'https://www.tarralva.com/_nuxt/img/thumbnail.png',
       },
       //Facebook Meta Tags
       { property: 'og:image:type', content: 'image/jpeg' },
@@ -71,23 +71,23 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://www.tarralva.com/_nuxt/img/jessica.94924ca.jpg',
+        content: 'https://www.tarralva.com/_nuxt/img/thumbnail.png',
       },
       {
         name: 'og:site_name',
-        content: 'Jessica Tarra - Developer',
+        content: 'Jessica Tarra | Software Developer',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:title',
         name: 'og:title',
-        content: 'Jessica Tarra - Developer',
+        content: 'Jessica Tarra | Software Developer',
       },
       {
         hid: 'og:description',
         name: 'og:description',
         content:
-          'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Front-end Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
+          'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Software Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
       },
     ],
     //Favicon
