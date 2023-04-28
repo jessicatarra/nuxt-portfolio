@@ -29,6 +29,9 @@
         <a href="/videoplayback.mp4" download>Download Video</a>
       </li>
       <li>
+        <a href="/presets_video_thumbnail.png">See image</a>
+      </li>
+      <li>
         <ColorModePicker class="block sm:hidden" />
       </li>
     </ul>
