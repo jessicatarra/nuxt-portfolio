@@ -27,7 +27,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Software Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
+          'Hello, I am Jessica. I am from Cartagena, Colombia, and currently residing in Rio de Janeiro, Brazil. As a Software Developer, I am enthusiastic about contributing to the future tech solutions that will drive the growth of LATAM.',
       },
       //Twitter Meta Tags
       {
@@ -57,12 +57,12 @@ export default {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Software Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
+          'Hello, I am Jessica. I am from Cartagena, Colombia, and currently residing in Rio de Janeiro, Brazil. As a Software Developer, I am enthusiastic about contributing to the future tech solutions that will drive the growth of LATAM.',
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://www.tarralva.com/_nuxt/img/thumbnail.bf9052c.png',
+        content: '/thumbnail.png',
       },
       //Facebook Meta Tags
       { property: 'og:image:type', content: 'image/jpeg' },
@@ -71,7 +71,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://www.tarralva.com/_nuxt/img/thumbnail.bf9052c.png',
+        content: '/thumbnail.png',
       },
       {
         name: 'og:site_name',
@@ -87,7 +87,7 @@ export default {
         hid: 'og:description',
         name: 'og:description',
         content:
-          'Hello, I am Jessica. I am from Cartagena, Colombia and currently living in Rio de Janeiro, Brazil. I am a Software Developer who is excited about being part of the future tech solutions that will help LATAM grow.',
+          'Hello, I am Jessica. I am from Cartagena, Colombia, and currently residing in Rio de Janeiro, Brazil. As a Software Developer, I am enthusiastic about contributing to the future tech solutions that will drive the growth of LATAM.',
       },
     ],
     //Favicon

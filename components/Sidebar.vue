@@ -12,7 +12,7 @@
           >
             <img
               class="profile-image"
-              src="../assets/images/jessica.jpg"
+              src="../assets/images/new-profile-pic.jpeg"
               alt="Jessica Tarra"
             />
           </div>
