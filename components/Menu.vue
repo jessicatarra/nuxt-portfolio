@@ -23,7 +23,7 @@
       </li>
       <li class="menu-item flex flex-row justify-start space-x-4">
         <IconAbout />
-        <a class="font-bold tracking-tight" href="pdf/resume.pdf">Resume</a>
+        <a class="font-bold tracking-tight" href="cv/jessica-tarra-resume.pdf">Resume</a>
       </li>
       <li class="menu-item flex flex-row justify-start space-x-4">
         <IconContact />
