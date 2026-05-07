@@ -4,10 +4,12 @@
       class="pt-8 md:pt-48 pb-24 flex flex-col justify-center space-y-8 md:space-y-16"
     >
       <h1 class="text-center text-2xl md:text-4xl">Hi, I'm Jessica Tarra 👋</h1>
-      <vue-typer
-        class="text-5xl md:text-8xl font-bold text-center"
-        text="Building awesome software experiences!"
-      ></vue-typer>
+      <div class="min-h-[11rem] md:min-h-[15rem] flex items-center justify-center">
+        <vue-typer
+          class="text-5xl md:text-8xl font-bold text-center"
+          text="Building awesome software experiences!"
+        ></vue-typer>
+      </div>
       <h2 class="text-center text-2xl md:text-4xl">
         I'm a <strong class="font-bold">Software Developer </strong>from
         Cartagena, Colombia and currently living in Rio de Janeiro, Brazil.
