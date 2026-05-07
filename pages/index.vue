@@ -34,6 +34,31 @@ export default {
     Contact,
     Footer,
   },
+
+  data() {
+    return {
+      keyBuffer: [],
+    }
+  },
+
+  mounted() {
+    window.addEventListener('keydown', this.handleKeyEgg)
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('keydown', this.handleKeyEgg)
+  },
+
+  methods: {
+    handleKeyEgg(e) {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return
+      this.keyBuffer.push(e.key.toLowerCase())
+      this.keyBuffer = this.keyBuffer.slice(-3)
+      if (this.keyBuffer.join('') === 'run') {
+        this.$router.push('/training-plan')
+      }
+    },
+  },
 }
 </script>
 
