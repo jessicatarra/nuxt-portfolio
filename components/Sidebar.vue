@@ -9,8 +9,6 @@
         >
           <div
             class="profile-image-container mr-auto flex-shrink-0 flex justify-center items-center rounded-full border-4 md:mt-4 md:mx-auto"
-            :class="{ 'easter-egg-pulse': tapped }"
-            @click="handleTap"
           >
             <img
               class="profile-image"
@@ -33,28 +31,7 @@ export default {
     Menu,
   },
   data() {
-    return {
-      tapCount: 0,
-      tapTimer: null,
-      tapped: false,
-    }
-  },
-
-  methods: {
-    handleTap() {
-      this.tapCount++
-      this.tapped = true
-      setTimeout(() => { this.tapped = false }, 300)
-
-      if (this.tapTimer) clearTimeout(this.tapTimer)
-      this.tapTimer = setTimeout(() => { this.tapCount = 0 }, 2000)
-
-      if (this.tapCount >= 5) {
-        this.tapCount = 0
-        clearTimeout(this.tapTimer)
-        this.$router.push('/training-plan')
-      }
-    },
+    return {}
   },
 }
 </script>
@@ -72,20 +49,10 @@ aside {
 .profile-image-container {
   border-color: var(--border-color) !important;
 }
-.profile-image-container {
-  cursor: pointer;
-}
 .profile-image-container .profile-image {
   border-radius: 50%;
   object-fit: cover;
   width: 10rem;
   height: 10rem;
-}
-@keyframes pulse-ring {
-  0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.6); }
-  100% { box-shadow: 0 0 0 12px rgba(99, 102, 241, 0); }
-}
-.easter-egg-pulse {
-  animation: pulse-ring 0.3s ease-out;
 }
 </style>

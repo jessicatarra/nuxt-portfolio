@@ -1,5 +1,9 @@
 <template>
-  <footer class="relative icons-container sm:pl-64 z-10 pt-4 pb-4">
+  <footer
+    class="relative icons-container sm:pl-64 z-10 pt-4 pb-4"
+    :class="{ 'easter-egg-pulse': tapped }"
+    @click="handleTap"
+  >
     <div class="wrapper flex flex-col">
       <div class="pt-12 pb-8 flex flex-row justify-between">
         <div class="flex flex-row space-x-4 my-auto">
@@ -53,7 +57,28 @@ export default {
   },
 
   data() {
-    return {}
+    return {
+      tapCount: 0,
+      tapTimer: null,
+      tapped: false,
+    }
+  },
+
+  methods: {
+    handleTap() {
+      this.tapCount++
+      this.tapped = true
+      setTimeout(() => { this.tapped = false }, 300)
+
+      if (this.tapTimer) clearTimeout(this.tapTimer)
+      this.tapTimer = setTimeout(() => { this.tapCount = 0 }, 2000)
+
+      if (this.tapCount >= 5) {
+        this.tapCount = 0
+        clearTimeout(this.tapTimer)
+        this.$router.push('/training-plan')
+      }
+    },
   },
 }
 </script>
@@ -61,9 +86,19 @@ export default {
 <style scoped>
 footer {
   background-color: var(--bg);
+  cursor: default;
 }
 
 .icons-container {
   border-top: 2px solid var(--border-color);
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.6); }
+  100% { box-shadow: 0 0 0 12px rgba(99, 102, 241, 0); }
+}
+
+.easter-egg-pulse {
+  animation: pulse-ring 0.3s ease-out;
 }
 </style>
