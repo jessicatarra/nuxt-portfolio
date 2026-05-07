@@ -4,7 +4,7 @@
       class="pt-8 md:pt-48 pb-24 flex flex-col justify-center space-y-8 md:space-y-16"
     >
       <h1 class="text-center text-2xl md:text-4xl">Hi, I'm Jessica Tarra 👋</h1>
-      <div class="min-h-[11rem] md:min-h-[15rem] flex items-center justify-center">
+      <div class="typer-container flex items-center justify-center">
         <vue-typer
           class="text-5xl md:text-8xl font-bold text-center"
           text="Building awesome software experiences!"
@@ -35,5 +35,13 @@ export default {
 <style>
 .vue-typer .custom.char.typed {
   color: var(--color);
+}
+.typer-container {
+  height: 14rem;
+}
+@media (min-width: 768px) {
+  .typer-container {
+    height: 20rem;
+  }
 }
 </style>
