@@ -185,28 +185,30 @@
                 </div>
                 <p class="text-xs opacity-40 mb-4 font-medium">{{ formatDateRange(week.startDate, week.endDate) }}</p>
 
-                <!-- Key run metrics -->
-                <div class="space-y-3 mb-4">
-                  <div v-if="weekLongRun(week)">
-                    <p class="text-xs font-semibold uppercase tracking-wider opacity-40 mb-0.5">Sat — Long Run</p>
-                    <p :class="['font-bold', weekLongRun(week).km >= 20 ? 'text-3xl text-green-500' : 'text-2xl']">
-                      {{ weekLongRun(week).km }} km
-                      <span v-if="weekLongRun(week).km >= 20" class="ml-1 text-2xl">🎯</span>
-                    </p>
-                    <p class="text-xs opacity-40 mt-0.5">{{ weekLongRun(week).date }}</p>
-                  </div>
-                  <div v-if="weekTuesdayRun(week)">
-                    <p class="text-xs font-semibold uppercase tracking-wider opacity-40 mb-0.5">Tue — Run A</p>
-                    <p class="font-bold text-lg">{{ weekTuesdayRun(week).km }} km</p>
-                    <p class="text-xs opacity-40 mt-0.5">{{ weekTuesdayRun(week).date }}</p>
-                  </div>
+                <!-- Long run highlight -->
+                <div v-if="weekLongRun(week)" class="long-run-tile rounded-xl p-3 mb-3">
+                  <p class="text-xs font-bold uppercase tracking-wider opacity-50 mb-1">Sat — Long Run</p>
+                  <p :class="['font-bold leading-none', weekLongRun(week).km >= 20 ? 'text-3xl text-green-500' : 'text-2xl']">
+                    {{ weekLongRun(week).km }} km
+                    <span v-if="weekLongRun(week).km >= 20" class="ml-1 text-2xl">🎯</span>
+                  </p>
+                  <p class="text-xs opacity-40 mt-1">{{ weekLongRun(week).date }}</p>
                 </div>
 
-                <!-- Volume summary -->
-                <div class="flex gap-3 text-xs opacity-40 mb-4">
-                  <span v-if="week.summary.bySport.run">🏃 {{ week.summary.bySport.run.km }} km</span>
-                  <span v-if="week.summary.bySport.bike && week.summary.bySport.bike.km">🚴 {{ week.summary.bySport.bike.km }} km</span>
-                  <span>⏱ {{ week.summary.totalHours }}h</span>
+                <!-- Weekly totals grid -->
+                <div class="grid grid-cols-3 gap-2 mb-4">
+                  <div class="week-stat-tile rounded-lg p-2 text-center">
+                    <p class="text-xs font-bold uppercase tracking-wider opacity-40 mb-0.5">Run</p>
+                    <p class="font-bold text-sm">{{ week.summary.bySport.run ? week.summary.bySport.run.km : 0 }} km</p>
+                  </div>
+                  <div class="week-stat-tile rounded-lg p-2 text-center">
+                    <p class="text-xs font-bold uppercase tracking-wider opacity-40 mb-0.5">Bike</p>
+                    <p class="font-bold text-sm">{{ (week.summary.bySport.bike && week.summary.bySport.bike.km) ? week.summary.bySport.bike.km : 0 }} km</p>
+                  </div>
+                  <div class="week-stat-tile rounded-lg p-2 text-center">
+                    <p class="text-xs font-bold uppercase tracking-wider opacity-40 mb-0.5">Time</p>
+                    <p class="font-bold text-sm">{{ week.summary.totalHours }}h</p>
+                  </div>
                 </div>
 
                 <!-- Toggle button -->
@@ -516,6 +518,14 @@ export default {
 }
 .stat-card {
   background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+.long-run-tile {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+}
+.week-stat-tile {
+  background-color: var(--bg-primary);
   border: 1px solid var(--border-color);
 }
 .schedule-btn {
