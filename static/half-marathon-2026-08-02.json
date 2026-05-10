@@ -1,0 +1,592 @@
+{
+  "version": "1.0",
+  "meta": {
+    "id": "jessica-hm-2026-08-02",
+    "athlete": "Jessica Tarra",
+    "event": "Half Marathon",
+    "eventDate": "2026-08-02",
+    "planStartDate": "2026-05-11",
+    "planEndDate": "2026-08-02",
+    "createdAt": "2026-05-10T00:00:00Z",
+    "updatedAt": "2026-05-10T00:00:00Z",
+    "totalWeeks": 12,
+    "generatedBy": "Claude Coach"
+  },
+  "preferences": {
+    "bike": "kilometers",
+    "run": "kilometers",
+    "firstDayOfWeek": "monday"
+  },
+  "assessment": {
+    "foundation": {
+      "raceHistory": ["No prior race history on record"],
+      "foundationLevel": "intermediate",
+      "yearsInSport": 0.25,
+      "note": "New runner (~3 months) with strong cycling aerobic base (1030 km YTD). Began running Feb 2026. Longest run: 9.01 km (May 9 2026)."
+    },
+    "currentForm": {
+      "weeklyVolume": { "totalHours": 9.7, "runHours": 2.05, "bikeHours": 4.7, "strengthHours": 0.75 },
+      "longestSessions": { "runKm": 9.01, "bikeKm": 56.34 },
+      "weeklyRunKm": 16,
+      "consistency": 11
+    },
+    "strengths": [
+      { "area": "Cycling aerobic base", "evidence": "1030 km YTD, 78h — strong cardiovascular engine" },
+      { "area": "Training consistency", "evidence": "Training nearly every day across all 3 months of run history" },
+      { "area": "Strength habit", "evidence": "1–2 strength sessions per week already embedded" }
+    ],
+    "limiters": [
+      { "area": "Run-specific durability", "evidence": "Max run 9 km; 21.1 km race requires careful long-run build" },
+      { "area": "Cardiac drift when running", "evidence": "HR exceeds Z2 even at easy paces — run-walk intervals prescribed to keep aerobic load appropriate" },
+      { "area": "Pace data", "evidence": "No race history; 5K time trial in Week 3 will calibrate tempo and race-pace targets" }
+    ],
+    "constraints": ["Busy mid-week — short sessions Tue/Thu; key long sessions on weekends"]
+  },
+  "zones": {
+    "run": {
+      "hr": {
+        "maxHR": 202,
+        "estimatedLTHR": 175,
+        "note": "Zones based on measured max HR 202 bpm. LTHR estimated. Validate with 5K time trial in Week 3.",
+        "zones": [
+          { "zone": 1, "name": "Recovery",   "hrLow": 0,   "hrHigh": 121 },
+          { "zone": 2, "name": "Aerobic",     "hrLow": 121, "hrHigh": 141 },
+          { "zone": 3, "name": "Tempo",       "hrLow": 141, "hrHigh": 162 },
+          { "zone": 4, "name": "Threshold",   "hrLow": 162, "hrHigh": 182 },
+          { "zone": 5, "name": "VO2max",      "hrLow": 182, "hrHigh": 202 }
+        ]
+      },
+      "runWalkHRTriggers": {
+        "startWalkingAbove": 165,
+        "resumeRunningBelow": 140,
+        "note": "HR anchor calibrated to actual run data (avg HR 163 bpm at 8:22/km on May 9). Walk when HR hits 165 (top of Z4). Resume when HR drops to 140 (mid Z2). As running economy improves over the plan, these triggers will naturally become easier to stay under."
+      },
+      "pace": {
+        "easy": "7:30–8:30/km (conversational, full sentences)",
+        "tempo": "6:20–7:00/km (comfortably hard, 7/10 effort)",
+        "racePace": "TBD after Week 3 time trial — est. 6:30–7:30/km",
+        "note": "Pace targets refined after 5K time trial (May 28, Week 3 Thursday)"
+      }
+    }
+  },
+  "runWalkProgression": {
+    "note": "Run-walk ratios are prescribed for long runs and easy runs throughout the plan. Ratios loosen as running economy improves. By race day you should be running ~12 min continuous intervals or fully continuous.",
+    "phases": [
+      { "weeks": "1–2", "longRun": "5 min run / 1 min walk",  "easyRun": "HR cap: walk when >152, resume at 130" },
+      { "weeks": "3–4", "longRun": "6 min run / 1 min walk",  "easyRun": "HR cap: walk when >152, resume at 130" },
+      { "weeks": "5–6", "longRun": "7 min run / 1 min walk",  "easyRun": "Try continuous; walk breaks if HR >152" },
+      { "weeks": "7–8", "longRun": "9 min run / 1 min walk",  "easyRun": "Try continuous; walk breaks if HR >152" },
+      { "weeks": "9–10","longRun": "12 min run / 1 min walk", "easyRun": "Continuous target; 1 walk break per km if needed" },
+      { "weeks": "11",  "longRun": "Continuous or 15:1",      "easyRun": "Continuous" },
+      { "weeks": "12 (race)", "note": "Run continuous. Walk through aid stations only. Trust the fitness." }
+    ]
+  },
+  "phases": [
+    {
+      "name": "Base", "startWeek": 1, "endWeek": 4,
+      "focus": "Leg adaptation, aerobic foundation, run-walk habit, pace calibration",
+      "weeklyHoursRange": { "low": 5.5, "high": 7.5 },
+      "weeklyRunKmRange": { "low": 17, "high": 25 },
+      "keyWorkouts": ["Long run with 5:1 → 6:1 run-walk", "5K Time Trial (Week 3 Thursday)"],
+      "physiologicalGoals": ["Build run-specific leg durability", "Establish 3-run-per-week routine", "Calibrate pace and HR zones via time trial"]
+    },
+    {
+      "name": "Build", "startWeek": 5, "endWeek": 8,
+      "focus": "Tempo work, long run extension, run-walk ratios loosening",
+      "weeklyHoursRange": { "low": 5.5, "high": 8.5 },
+      "weeklyRunKmRange": { "low": 20, "high": 31 },
+      "keyWorkouts": ["Tempo runs (3–5 km continuous at Z3)", "Long run 13–17 km with 7:1 → 9:1 run-walk"],
+      "physiologicalGoals": ["Raise lactate threshold", "Safely extend long run", "Improve running economy so easy paces feel easier"]
+    },
+    {
+      "name": "Peak", "startWeek": 9, "endWeek": 10,
+      "focus": "Peak long run (20 km), race-pace insertions, near-continuous running",
+      "weeklyHoursRange": { "low": 7.5, "high": 8.5 },
+      "weeklyRunKmRange": { "low": 32, "high": 33 },
+      "keyWorkouts": ["Race-pace run segments", "18 km long run", "20 km long run (longest run of plan)"],
+      "physiologicalGoals": ["Race-pace confidence", "Near-continuous long run at 12:1 ratio", "Refine fueling strategy"]
+    },
+    {
+      "name": "Taper", "startWeek": 11, "endWeek": 12,
+      "focus": "Freshness, sharpness, nothing new",
+      "weeklyHoursRange": { "low": 2.5, "high": 6.5 },
+      "weeklyRunKmRange": { "low": 8, "high": 23 },
+      "keyWorkouts": ["Strides", "Pre-race shakeout"],
+      "physiologicalGoals": ["Arrive rested and sharp", "Trust the training", "Confirm race-day nutrition plan"]
+    }
+  ],
+  "weeks": [
+    {
+      "weekNumber": 1, "startDate": "2026-05-11", "endDate": "2026-05-17",
+      "phase": "Base", "focus": "Establish the routine — consolidate after 9 km long run yesterday",
+      "targetHours": 6.5, "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-05-11", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w1-mon", "sport": "ride", "type": "aerobic", "name": "Easy Recovery Spin 45 min", "durationMinutes": 45, "primaryZone": "Z1-Z2", "humanReadable": "Easy indoor or outdoor spin. HR under 135 the whole time — if it creeps up, slow down. No hills, no surges. This is active recovery, not a workout. Legs should feel better after than before.", "completed": false }]
+        },
+        {
+          "date": "2026-05-12", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w1-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 5 km", "durationMinutes": 42, "distanceKm": 5, "primaryZone": "Z2", "humanReadable": "Run easy at conversational pace (full sentences). If HR climbs above 165 bpm, slow to a walk until it drops to 140, then resume running. Based on your recent data, your HR will hit 163–170 even at slow paces — that's expected. The walk breaks are doing the work. No ego — time on feet is the goal.", "completed": false }]
+        },
+        {
+          "date": "2026-05-13", "dayOfWeek": "Wednesday",
+          "workouts": [
+            { "id": "w1-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 45 min", "durationMinutes": 45, "primaryZone": "Z2", "humanReadable": "Steady indoor trainer ride at Z2. Cadence 85–90 rpm. Flush the legs gently — this is not a workout, it's active recovery.", "completed": false },
+            { "id": "w1-wed-str", "sport": "strength", "type": "strength", "name": "Strength 30 min", "durationMinutes": 30, "humanReadable": "Lower-body and core focus: 3 rounds of — clamshells ×15 each side, single-leg glute bridges ×12, calf raises ×20, dead bug ×10, side plank 30s each. No heavy lifting — injury prevention only.", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-05-14", "dayOfWeek": "Thursday",
+          "workouts": [{ "id": "w1-thu-run", "sport": "run", "type": "easy", "name": "Easy Run 5 km", "durationMinutes": 42, "distanceKm": 5, "primaryZone": "Z2", "humanReadable": "Easy run — walk when HR hits 165, resume at 140. Cadence focus: aim for 78–82 spm (single leg). Shorter, quicker steps are more efficient and will lower your HR over time. Relaxed shoulders, soft landing, slight forward lean.", "completed": false }]
+        },
+        {
+          "date": "2026-05-15", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w1-fri", "sport": "rest", "type": "rest", "name": "Rest Day", "description": "Rest before long run.", "completed": false }]
+        },
+        {
+          "date": "2026-05-16", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w1-sat-run", "sport": "run", "type": "long", "name": "Long Run 9 km — 5:1 run-walk", "durationMinutes": 80, "distanceKm": 9, "primaryZone": "Z2", "humanReadable": "Run-walk structure: run 5 min / walk 1 min, repeat throughout. If HR hits 152 mid-interval, start the walk break early. Goal: finish the 9 km feeling like you had more in the tank. Bring water.", "completed": false }]
+        },
+        {
+          "date": "2026-05-17", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w1-sun-ride", "sport": "ride", "type": "aerobic", "name": "Outdoor Ride 50 km", "durationMinutes": 165, "distanceKm": 50, "primaryZone": "Z2", "humanReadable": "Comfortable Z2 outdoor ride. No surges. This is recovery from yesterday's long run — keep HR under 141 and enjoy the scenery.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 6.4, "bySport": { "run": { "sessions": 3, "hours": 2.7, "km": 19 }, "bike": { "sessions": 2, "hours": 3.5, "km": 50 }, "strength": { "sessions": 1, "hours": 0.5 } } }
+    },
+    {
+      "weekNumber": 2, "startDate": "2026-05-18", "endDate": "2026-05-24",
+      "phase": "Base", "focus": "First volume bump — long run to 10.5 km",
+      "targetHours": 7.0, "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-05-18", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w2-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-05-19", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w2-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 5 km", "durationMinutes": 42, "distanceKm": 5, "primaryZone": "Z2", "humanReadable": "Easy conversational run. Walk whenever HR exceeds 152 bpm. Notice if the walk breaks are getting shorter than last week — that's a sign your running economy is already adapting.", "completed": false }]
+        },
+        {
+          "date": "2026-05-20", "dayOfWeek": "Wednesday",
+          "workouts": [{ "id": "w2-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 50 min", "durationMinutes": 50, "primaryZone": "Z2", "humanReadable": "Steady indoor Z2 ride. Cadence 85–90 rpm. Optional: 4×30s light spin-ups at higher cadence to wake up the legs.", "completed": false }]
+        },
+        {
+          "date": "2026-05-21", "dayOfWeek": "Thursday",
+          "workouts": [{ "id": "w2-thu-run", "sport": "run", "type": "easy", "name": "Easy Run 6 km", "durationMinutes": 50, "distanceKm": 6, "primaryZone": "Z2", "humanReadable": "Easy run. Walk when HR hits 165, resume at 140. Focus on cadence: aim for 78–82 spm (single leg) — shorter, quicker steps lower HR more than slowing down does. Try to run 5–6 min before each walk break, but let the HR be your guide.", "completed": false }]
+        },
+        {
+          "date": "2026-05-22", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w2-fri-str", "sport": "strength", "type": "strength", "name": "Strength 40 min", "durationMinutes": 40, "humanReadable": "3 rounds: single-leg deadlift ×10 each, lateral band walks ×15 each, step-ups ×12 each, seated calf raises ×25, Copenhagen plank 20s each, dead bug ×12. Rest 60s between rounds.", "completed": false }]
+        },
+        {
+          "date": "2026-05-23", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w2-sat-run", "sport": "run", "type": "long", "name": "Long Run 10.5 km — 5:1 run-walk", "durationMinutes": 90, "distanceKm": 10.5, "primaryZone": "Z2", "humanReadable": "Run-walk: 5 min run / 1 min walk throughout. First time over 10 km — take it easy early. Bring water. Aim to feel controlled at the end, not destroyed.", "completed": false }]
+        },
+        {
+          "date": "2026-05-24", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w2-sun-ride", "sport": "ride", "type": "aerobic", "name": "Outdoor Ride 50 km", "durationMinutes": 165, "distanceKm": 50, "primaryZone": "Z2", "humanReadable": "Easy Z2 outdoor ride. Recover from the long run. Keep it social or solo — no pushing.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 7.0, "bySport": { "run": { "sessions": 3, "hours": 3.0, "km": 21.5 }, "bike": { "sessions": 2, "hours": 3.6, "km": 50 }, "strength": { "sessions": 1, "hours": 0.67 } } }
+    },
+    {
+      "weekNumber": 3, "startDate": "2026-05-25", "endDate": "2026-05-31",
+      "phase": "Base", "focus": "5K Time Trial on Thursday — this sets your pace targets for the entire plan",
+      "targetHours": 7.5, "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-05-25", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w3-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-05-26", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w3-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 5 km", "durationMinutes": 42, "distanceKm": 5, "primaryZone": "Z2", "humanReadable": "Easy shakeout. Stay very easy today — legs fresh for the time trial Thursday. Walk if HR >152.", "completed": false }]
+        },
+        {
+          "date": "2026-05-27", "dayOfWeek": "Wednesday",
+          "workouts": [
+            { "id": "w3-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 50 min", "durationMinutes": 50, "primaryZone": "Z2", "humanReadable": "Easy spin. Keep HR under 135. Legs should feel fresh going into Thursday's time trial.", "completed": false },
+            { "id": "w3-wed-str", "sport": "strength", "type": "strength", "name": "Strength 30 min", "durationMinutes": 30, "humanReadable": "Light session only: clamshells, hip bridges, calf raises, dead bugs. Skip any single-leg work that leaves you sore. Legs must be fresh for Thursday.", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-05-28", "dayOfWeek": "Thursday",
+          "workouts": [{ "id": "w3-thu-tt", "sport": "run", "type": "time-trial", "name": "5K Time Trial", "durationMinutes": 50, "distanceKm": 8, "primaryZone": "Z4", "humanReadable": "Structure: 10 min easy warm-up jog (HR < 140) → 5K all-out effort on a flat course or track → 10 min easy cool-down jog/walk.\n\nFor the 5K: go out at a pace that feels hard but even. Don't sprint the first km. Aim to negative split (faster second half). Record your finish time and average HR.\n\nAFTER THE RACE: Use your 5K time to update tempo and race-pace targets for the rest of the plan. Rough guide — 5K pace + 30s/km = tempo pace; +60s/km = HM race pace.", "completed": false }]
+        },
+        {
+          "date": "2026-05-29", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w3-fri", "sport": "rest", "type": "rest", "name": "Rest Day", "description": "Recovery after time trial. Light walk or stretching only.", "completed": false }]
+        },
+        {
+          "date": "2026-05-30", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w3-sat-run", "sport": "run", "type": "long", "name": "Long Run 12 km — 6:1 run-walk", "durationMinutes": 105, "distanceKm": 12, "primaryZone": "Z2", "humanReadable": "Run-walk: 6 min run / 1 min walk throughout. Easy pace — this is 2 days after the time trial so legs may feel heavy. That's normal. Stick to the walk breaks. Bring water and fuel after km 7.", "completed": false }]
+        },
+        {
+          "date": "2026-05-31", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w3-sun-ride", "sport": "ride", "type": "aerobic", "name": "Outdoor Ride 55 km", "durationMinutes": 180, "distanceKm": 55, "primaryZone": "Z2", "humanReadable": "Long aerobic ride. Easy Z2 throughout. Good opportunity to practice fueling: eat something every 45–60 min on the bike.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 7.5, "bySport": { "run": { "sessions": 3, "hours": 3.3, "km": 25 }, "bike": { "sessions": 2, "hours": 3.8, "km": 55 }, "strength": { "sessions": 1, "hours": 0.5 } } }
+    },
+    {
+      "weekNumber": 4, "startDate": "2026-06-01", "endDate": "2026-06-07",
+      "phase": "Base", "focus": "Recovery week — step back volume ~30%",
+      "targetHours": 5.5, "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-06-01", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w4-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-06-02", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w4-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 4 km", "durationMinutes": 34, "distanceKm": 4, "primaryZone": "Z2", "humanReadable": "Short and easy. This is a recovery week — resist the urge to push. Walk breaks as needed, HR cap 152.", "completed": false }]
+        },
+        {
+          "date": "2026-06-03", "dayOfWeek": "Wednesday",
+          "workouts": [{ "id": "w4-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 40 min", "durationMinutes": 40, "primaryZone": "Z1-Z2", "humanReadable": "Very easy recovery spin. HR under 130. Just keep the legs moving.", "completed": false }]
+        },
+        {
+          "date": "2026-06-04", "dayOfWeek": "Thursday",
+          "workouts": [
+            { "id": "w4-thu-run", "sport": "run", "type": "easy", "name": "Easy Run 5 km", "durationMinutes": 42, "distanceKm": 5, "primaryZone": "Z2", "humanReadable": "Easy run with walk breaks as needed. Use your 5K TT data from last week to check: are you running slower than your test pace? Good — that means you're running truly easy.", "completed": false },
+            { "id": "w4-thu-str", "sport": "strength", "type": "strength", "name": "Strength 30 min", "durationMinutes": 30, "humanReadable": "Maintenance session. Same exercises as usual — clamshells, single-leg bridges, calf raises, dead bugs. Light weights, controlled movement.", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-06-05", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w4-fri", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-06-06", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w4-sat-run", "sport": "run", "type": "long", "name": "Easy Long Run 8 km — 6:1 run-walk", "durationMinutes": 70, "distanceKm": 8, "primaryZone": "Z2", "humanReadable": "Recovery long run: 6 min run / 1 min walk. Significantly shorter than last week by design. Legs should feel fresh and bouncy. If they don't, add more walk breaks.", "completed": false }]
+        },
+        {
+          "date": "2026-06-07", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w4-sun-ride", "sport": "ride", "type": "aerobic", "name": "Outdoor Ride 40 km", "durationMinutes": 130, "distanceKm": 40, "primaryZone": "Z2", "humanReadable": "Easy recovery ride. Shorter than usual. Stay in Z2 and enjoy it.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 5.4, "bySport": { "run": { "sessions": 3, "hours": 2.4, "km": 17 }, "bike": { "sessions": 2, "hours": 2.8, "km": 40 }, "strength": { "sessions": 1, "hours": 0.5 } } }
+    },
+    {
+      "weekNumber": 5, "startDate": "2026-06-08", "endDate": "2026-06-14",
+      "phase": "Build", "focus": "First tempo run — introduce quality work on Thursday",
+      "targetHours": 7.0, "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-06-08", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w5-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-06-09", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w5-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 5 km", "durationMinutes": 42, "distanceKm": 5, "primaryZone": "Z2", "humanReadable": "Easy run. Try to run more continuously now — aim for 8–10 min stretches before walking. Walk if HR >152.", "completed": false }]
+        },
+        {
+          "date": "2026-06-10", "dayOfWeek": "Wednesday",
+          "workouts": [
+            { "id": "w5-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 50 min", "durationMinutes": 50, "primaryZone": "Z2", "humanReadable": "Steady Z2 trainer ride. Cadence 85–90 rpm. Legs should feel good ahead of tomorrow's tempo.", "completed": false },
+            { "id": "w5-wed-str", "sport": "strength", "type": "strength", "name": "Strength 30 min", "durationMinutes": 30, "humanReadable": "Standard session: single-leg deadlift, clamshells, hip bridges, calf raises, dead bug, plank. Keep it short — legs fresh for Thursday.", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-06-11", "dayOfWeek": "Thursday",
+          "workouts": [{ "id": "w5-thu-tempo", "sport": "run", "type": "tempo", "name": "Tempo Run 6 km (3 km tempo)", "durationMinutes": 52, "distanceKm": 6, "primaryZone": "Z3", "humanReadable": "Structure: 10 min easy warm-up → 3 km continuous at Z3 (HR 141–162, effort 7/10, comfortably hard) → 5 min easy cool-down.\n\nFor the 3 km tempo: no walk breaks — this should feel like a sustained effort where you could say 3-word sentences but not hold a conversation. Use your TT data from Week 3 to set pace. If you don't have that yet, aim for 6:20–7:00/km.", "completed": false }]
+        },
+        {
+          "date": "2026-06-12", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w5-fri", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-06-13", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w5-sat-run", "sport": "run", "type": "long", "name": "Long Run 13 km — 7:1 run-walk", "durationMinutes": 115, "distanceKm": 13, "primaryZone": "Z2", "humanReadable": "Run-walk: 7 min run / 1 min walk. First time over 12 km — the run-walk ratio is doing the work of keeping this aerobic. Bring water and a gel or banana for after km 8. Expect mild fatigue in km 10–13; stick to the walk breaks.", "completed": false }]
+        },
+        {
+          "date": "2026-06-14", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w5-sun-ride", "sport": "ride", "type": "aerobic", "name": "Outdoor Ride 55 km", "durationMinutes": 180, "distanceKm": 55, "primaryZone": "Z2", "humanReadable": "Long aerobic ride. Easy Z2 throughout. Fuel every 45–60 min. This is your longest aerobic session of the week — keep it comfortable.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 7.1, "bySport": { "run": { "sessions": 3, "hours": 3.0, "km": 24 }, "bike": { "sessions": 2, "hours": 3.8, "km": 55 }, "strength": { "sessions": 1, "hours": 0.5 } } }
+    },
+    {
+      "weekNumber": 6, "startDate": "2026-06-15", "endDate": "2026-06-21",
+      "phase": "Build", "focus": "Extend tempo to 4 km, long run to 15 km",
+      "targetHours": 8.0, "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-06-15", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w6-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-06-16", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w6-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 6 km", "durationMinutes": 50, "distanceKm": 6, "primaryZone": "Z2", "humanReadable": "Easy conversational run. By now you should be noticing the walk breaks are getting shorter. Try 8–10 min continuous before each walk break. HR cap 152.", "completed": false }]
+        },
+        {
+          "date": "2026-06-17", "dayOfWeek": "Wednesday",
+          "workouts": [{ "id": "w6-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 55 min", "durationMinutes": 55, "primaryZone": "Z2", "humanReadable": "Steady Z2 trainer ride. Cadence 85–90 rpm. Optional: 3×5 min at Z3 to add some quality mid-ride.", "completed": false }]
+        },
+        {
+          "date": "2026-06-18", "dayOfWeek": "Thursday",
+          "workouts": [{ "id": "w6-thu-tempo", "sport": "run", "type": "tempo", "name": "Tempo Run 7 km (4 km tempo)", "durationMinutes": 60, "distanceKm": 7, "primaryZone": "Z3", "humanReadable": "Structure: 10 min easy warm-up → 4 km continuous at Z3 (HR 141–162, effort 7/10) → 5 min easy cool-down.\n\nOne more km of tempo than last week. The first 2 km will feel manageable; the last 2 km are where the adaptation happens. Don't blow up in km 1 — even pace is the goal.", "completed": false }]
+        },
+        {
+          "date": "2026-06-19", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w6-fri-str", "sport": "strength", "type": "strength", "name": "Strength 40 min", "durationMinutes": 40, "humanReadable": "3 rounds: single-leg deadlift ×10 each, lateral band walks ×15, step-ups ×12 each, Copenhagen plank 20s each, seated calf raises ×25, dead bug ×12.", "completed": false }]
+        },
+        {
+          "date": "2026-06-20", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w6-sat-run", "sport": "run", "type": "long", "name": "Long Run 15 km — 7:1 run-walk", "durationMinutes": 130, "distanceKm": 15, "primaryZone": "Z2", "humanReadable": "Run-walk: 7 min run / 1 min walk. At 15 km you'll be on your feet ~2h 10min. Fueling is important: water every 20–30 min, a gel or small snack at km 7 and km 12. Keep the effort conversational during every running interval — if you're breathing hard at km 4, slow down.", "completed": false }]
+        },
+        {
+          "date": "2026-06-21", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w6-sun-ride", "sport": "ride", "type": "aerobic", "name": "Outdoor Ride 55 km", "durationMinutes": 180, "distanceKm": 55, "primaryZone": "Z2", "humanReadable": "Long aerobic ride. Easy Z2. Your legs will be feeling last night's long run — that's fine. Stay in Z2 and let the cycling flush them out.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 8.1, "bySport": { "run": { "sessions": 3, "hours": 3.7, "km": 28 }, "bike": { "sessions": 2, "hours": 3.9, "km": 55 }, "strength": { "sessions": 1, "hours": 0.67 } } }
+    },
+    {
+      "weekNumber": 7, "startDate": "2026-06-22", "endDate": "2026-06-28",
+      "phase": "Build", "focus": "Biggest Build week — tempo 5 km, long run 17 km",
+      "targetHours": 8.1, "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-06-22", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w7-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-06-23", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w7-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 6 km", "durationMinutes": 50, "distanceKm": 6, "primaryZone": "Z2", "humanReadable": "Easy run. By week 7 you should be running 10+ min comfortably before needing a walk. HR cap 148 today — be conservative ahead of Saturday's big long run.", "completed": false }]
+        },
+        {
+          "date": "2026-06-24", "dayOfWeek": "Wednesday",
+          "workouts": [
+            { "id": "w7-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 55 min", "durationMinutes": 55, "primaryZone": "Z2", "humanReadable": "Steady Z2 trainer ride. Keep it controlled — big week ahead.", "completed": false },
+            { "id": "w7-wed-str", "sport": "strength", "type": "strength", "name": "Strength 30 min", "durationMinutes": 30, "humanReadable": "Standard lower-body session. Keep weights light — this is not the week for PRs in the gym.", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-06-25", "dayOfWeek": "Thursday",
+          "workouts": [{ "id": "w7-thu-tempo", "sport": "run", "type": "tempo", "name": "Tempo Run 8 km (5 km tempo)", "durationMinutes": 67, "distanceKm": 8, "primaryZone": "Z3", "humanReadable": "Structure: 10 min easy warm-up → 5 km continuous at Z3 (HR 141–162, effort 7/10) → 5 min easy cool-down.\n\nThis is your longest tempo segment of the plan. 5 km at race-adjacent effort builds exactly the threshold you'll need on race day. Settle into a rhythm at km 1 and hold it — no surging.", "completed": false }]
+        },
+        {
+          "date": "2026-06-26", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w7-fri", "sport": "rest", "type": "rest", "name": "Rest Day", "description": "Full rest before 17 km long run.", "completed": false }]
+        },
+        {
+          "date": "2026-06-27", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w7-sat-run", "sport": "run", "type": "long", "name": "Long Run 17 km — 9:1 run-walk", "durationMinutes": 150, "distanceKm": 17, "primaryZone": "Z2", "humanReadable": "Run-walk: 9 min run / 1 min walk. At ~2.5h on feet, fueling is critical: gel or real food at km 6, km 11, and km 15. Water every 20 min.\n\nMentally split into thirds: km 1–6 easy/social, km 7–12 steady, km 13–17 focus. The last 4 km will be hard — that's the adaptation. Stick to your walk breaks and trust the structure.", "completed": false }]
+        },
+        {
+          "date": "2026-06-28", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w7-sun-ride", "sport": "ride", "type": "aerobic", "name": "Outdoor Ride 50 km", "durationMinutes": 165, "distanceKm": 50, "primaryZone": "Z2", "humanReadable": "Easy recovery ride after the biggest week so far. Z2 only. If legs feel beat up, cut to 40 km — no shame.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 8.2, "bySport": { "run": { "sessions": 3, "hours": 4.1, "km": 31 }, "bike": { "sessions": 2, "hours": 3.7, "km": 50 }, "strength": { "sessions": 1, "hours": 0.5 } } }
+    },
+    {
+      "weekNumber": 8, "startDate": "2026-06-29", "endDate": "2026-07-05",
+      "phase": "Build", "focus": "Recovery week — step back before Peak phase",
+      "targetHours": 6.0, "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-06-29", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w8-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-06-30", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w8-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 5 km", "durationMinutes": 42, "distanceKm": 5, "primaryZone": "Z2", "humanReadable": "Short easy recovery run. Should feel noticeably easier after backing off volume. Walk breaks as needed.", "completed": false }]
+        },
+        {
+          "date": "2026-07-01", "dayOfWeek": "Wednesday",
+          "workouts": [{ "id": "w8-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 45 min", "durationMinutes": 45, "primaryZone": "Z2", "humanReadable": "Easy spin. HR under 135. Recovery only.", "completed": false }]
+        },
+        {
+          "date": "2026-07-02", "dayOfWeek": "Thursday",
+          "workouts": [
+            { "id": "w8-thu-run", "sport": "run", "type": "easy", "name": "Easy Run 5 km", "durationMinutes": 42, "distanceKm": 5, "primaryZone": "Z2", "humanReadable": "Easy run. Check in with your body — how are the legs feeling after the big build weeks? Note any niggles. Easy running only.", "completed": false },
+            { "id": "w8-thu-str", "sport": "strength", "type": "strength", "name": "Strength 30 min", "durationMinutes": 30, "humanReadable": "Standard maintenance session. Focus on single-leg stability and calf strength. No new exercises.", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-07-03", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w8-fri", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-07-04", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w8-sat-run", "sport": "run", "type": "long", "name": "Easy Long Run 10 km — 9:1 run-walk", "durationMinutes": 88, "distanceKm": 10, "primaryZone": "Z2", "humanReadable": "Recovery long run. Much shorter than last week on purpose. Run-walk 9:1 — try to feel light and easy. If you feel good at km 8, resist the urge to push. Legs need to absorb the build before the Peak weeks.", "completed": false }]
+        },
+        {
+          "date": "2026-07-05", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w8-sun-ride", "sport": "ride", "type": "aerobic", "name": "Outdoor Ride 45 km", "durationMinutes": 145, "distanceKm": 45, "primaryZone": "Z2", "humanReadable": "Easy aerobic ride. Stay in Z2 — this is the last rest before two hard peak weeks.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 6.1, "bySport": { "run": { "sessions": 3, "hours": 2.9, "km": 20 }, "bike": { "sessions": 2, "hours": 3.2, "km": 45 }, "strength": { "sessions": 1, "hours": 0.5 } } }
+    },
+    {
+      "weekNumber": 9, "startDate": "2026-07-06", "endDate": "2026-07-12",
+      "phase": "Peak", "focus": "First race-pace run, 18 km long run with pace insertions",
+      "targetHours": 7.8, "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-07-06", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w9-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-07-07", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w9-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 6 km", "durationMinutes": 50, "distanceKm": 6, "primaryZone": "Z2", "humanReadable": "Easy run. Legs should feel fresh after the recovery week. Try running continuously — only walk if HR exceeds 148.", "completed": false }]
+        },
+        {
+          "date": "2026-07-08", "dayOfWeek": "Wednesday",
+          "workouts": [{ "id": "w9-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 55 min", "durationMinutes": 55, "primaryZone": "Z2", "humanReadable": "Steady Z2 trainer ride. Cadence 85–90 rpm. Good prep for Thursday's race-pace session.", "completed": false }]
+        },
+        {
+          "date": "2026-07-09", "dayOfWeek": "Thursday",
+          "workouts": [{ "id": "w9-thu-rp", "sport": "run", "type": "race-pace", "name": "Race-Pace Run 8 km (5 km at race pace)", "durationMinutes": 67, "distanceKm": 8, "primaryZone": "Z3-Z4", "humanReadable": "Structure: 10 min easy warm-up → 5 km continuous at target race pace (HR ~141–155, effort 7–8/10) → 5 min easy cool-down.\n\nRace pace is the pace you plan to run on Aug 2. Use your Week 3 TT result if you have it. This should feel like you could sustain it for much longer — not a sprint. No walk breaks in the 5 km race-pace section.", "completed": false }]
+        },
+        {
+          "date": "2026-07-10", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w9-fri-str", "sport": "strength", "type": "strength", "name": "Strength 30 min", "durationMinutes": 30, "humanReadable": "Light maintenance session. Clamshells, hip bridges, calf raises, dead bug, plank. No fatigue — legs must be fresh for Saturday's 18 km.", "completed": false }]
+        },
+        {
+          "date": "2026-07-11", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w9-sat-run", "sport": "run", "type": "long", "name": "Long Run 18 km — 12:1 run-walk, last 3 km at race pace", "durationMinutes": 160, "distanceKm": 18, "primaryZone": "Z2-Z3", "humanReadable": "Run-walk: 12 min run / 1 min walk for km 1–15. For km 16–18: drop the walk breaks and run at race pace.\n\nStructure: easy/conversational for first 15 km → final 3 km at race-pace effort (HR 141–155).\n\nFueling: gel or food at km 6, km 11. Water throughout. This 18 km run at the end with pace work simulates race-day fatigue. Expect it to feel hard — that's exactly the point.", "completed": false }]
+        },
+        {
+          "date": "2026-07-12", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w9-sun-ride", "sport": "ride", "type": "aerobic", "name": "Recovery Ride 40 km", "durationMinutes": 130, "distanceKm": 40, "primaryZone": "Z1-Z2", "humanReadable": "Easy recovery ride. HR under 135 ideally. The sole purpose is to flush the legs gently. Cut short if needed.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 7.9, "bySport": { "run": { "sessions": 3, "hours": 4.2, "km": 32 }, "bike": { "sessions": 2, "hours": 3.1, "km": 40 }, "strength": { "sessions": 1, "hours": 0.5 } } }
+    },
+    {
+      "weekNumber": 10, "startDate": "2026-07-13", "endDate": "2026-07-19",
+      "phase": "Peak", "focus": "Longest run of the plan — 20 km. Peak week.",
+      "targetHours": 8.0, "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-07-13", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w10-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-07-14", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w10-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 6 km", "durationMinutes": 50, "distanceKm": 6, "primaryZone": "Z2", "humanReadable": "Easy shakeout. Legs may still feel heavy from last week's 18 km — that's normal. Easy pace, walk breaks as needed. Don't push.", "completed": false }]
+        },
+        {
+          "date": "2026-07-15", "dayOfWeek": "Wednesday",
+          "workouts": [{ "id": "w10-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 50 min", "durationMinutes": 50, "primaryZone": "Z2", "humanReadable": "Steady Z2 trainer ride. Cadence 85–90 rpm. Keep legs fresh for Thursday and Saturday.", "completed": false }]
+        },
+        {
+          "date": "2026-07-16", "dayOfWeek": "Thursday",
+          "workouts": [{ "id": "w10-thu-rp", "sport": "run", "type": "race-pace", "name": "Race-Pace Run 7 km (4 km at race pace)", "durationMinutes": 58, "distanceKm": 7, "primaryZone": "Z3-Z4", "humanReadable": "Structure: 10 min easy warm-up → 4 km continuous at race pace → 5 min easy cool-down.\n\nSlightly shorter than Week 9 race-pace session — letting you arrive at Saturday's 20 km fresher. Nail the pace and feel confident.", "completed": false }]
+        },
+        {
+          "date": "2026-07-17", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w10-fri", "sport": "rest", "type": "rest", "name": "Rest Day", "description": "Full rest. Eat well, sleep well — big day tomorrow.", "completed": false }]
+        },
+        {
+          "date": "2026-07-18", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w10-sat-run", "sport": "run", "type": "long", "name": "Longest Run — 20 km — 12:1 run-walk, last 4 km at race pace", "durationMinutes": 180, "distanceKm": 20, "primaryZone": "Z2-Z3", "humanReadable": "Run-walk: 12 min run / 1 min walk for km 1–16. Final 4 km: continuous at race pace (HR 141–155).\n\nThis is the most important run of the plan. You will not run this distance again until race day — so treat it as a dress rehearsal:\n- Wear your race-day shoes and kit\n- Eat the same breakfast you plan to eat on Aug 2\n- Use the same gels/fuel you plan to use in the race\n- Aim for km 5, km 10, km 15 fuel stops\n\nThe last 4 km at pace will be hard. That's the work. Trust the walk breaks that got you here.", "completed": false }]
+        },
+        {
+          "date": "2026-07-19", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w10-sun-ride", "sport": "ride", "type": "aerobic", "name": "Easy Ride 35 km", "durationMinutes": 115, "distanceKm": 35, "primaryZone": "Z1-Z2", "humanReadable": "Very easy recovery ride. HR under 130. The 20 km is done — taper begins next week. This ride is just gentle movement.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 8.0, "bySport": { "run": { "sessions": 3, "hours": 4.7, "km": 33 }, "bike": { "sessions": 2, "hours": 2.8, "km": 35 }, "strength": { "sessions": 0, "hours": 0 } } }
+    },
+    {
+      "weekNumber": 11, "startDate": "2026-07-20", "endDate": "2026-07-26",
+      "phase": "Taper", "focus": "Begin taper — volume drops 30%, add strides to stay sharp",
+      "targetHours": 6.0, "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-07-20", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w11-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-07-21", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w11-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 5 km + 4 strides", "durationMinutes": 47, "distanceKm": 5.4, "primaryZone": "Z2", "humanReadable": "Run 5 km easy (conversational pace). At the end: 4 strides — accelerate over 20 sec to fast-but-not-sprint pace, walk 60s between each. Strides wake up your fast-twitch muscles without fatiguing you.", "completed": false }]
+        },
+        {
+          "date": "2026-07-22", "dayOfWeek": "Wednesday",
+          "workouts": [{ "id": "w11-wed-ride", "sport": "ride", "type": "aerobic", "name": "Indoor Ride 40 min", "durationMinutes": 40, "primaryZone": "Z2", "humanReadable": "Easy spin. HR under 135. Keep it short and fresh.", "completed": false }]
+        },
+        {
+          "date": "2026-07-23", "dayOfWeek": "Thursday",
+          "workouts": [{ "id": "w11-thu-run", "sport": "run", "type": "easy", "name": "Easy Run 6 km + 4 strides", "durationMinutes": 55, "distanceKm": 6.4, "primaryZone": "Z2", "humanReadable": "Easy run then 4 strides at the end. Same as Tuesday. Notice how much lighter your legs feel compared to the peak weeks — the taper is working even when it doesn't feel like it.", "completed": false }]
+        },
+        {
+          "date": "2026-07-24", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w11-fri-str", "sport": "strength", "type": "strength", "name": "Light Strength 30 min", "durationMinutes": 30, "humanReadable": "Final strength session before race week. Very light: clamshells, hip bridges, calf raises, dead bug. No fatigue — just maintenance and keeping connective tissue warm.", "completed": false }]
+        },
+        {
+          "date": "2026-07-25", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w11-sat-run", "sport": "run", "type": "long", "name": "Easy Run 12 km — continuous", "durationMinutes": 100, "distanceKm": 12, "primaryZone": "Z2", "humanReadable": "By now your running economy should allow this fully continuous. If HR creeps above 150, take a short walk. Aim to feel smooth and relaxed — this is your confidence run. You've done 20 km. 12 km should feel very manageable.", "completed": false }]
+        },
+        {
+          "date": "2026-07-26", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w11-sun-ride", "sport": "ride", "type": "aerobic", "name": "Easy Ride 35 km", "durationMinutes": 115, "distanceKm": 35, "primaryZone": "Z2", "humanReadable": "Easy Z2 ride. Short and comfortable. Last longer outdoor ride before race week.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 6.0, "bySport": { "run": { "sessions": 3, "hours": 3.4, "km": 23.8 }, "bike": { "sessions": 2, "hours": 2.6, "km": 35 }, "strength": { "sessions": 1, "hours": 0.5 } } }
+    },
+    {
+      "weekNumber": 12, "startDate": "2026-07-27", "endDate": "2026-08-02",
+      "phase": "Taper", "focus": "Race week — stay loose, do almost nothing, trust the training",
+      "targetHours": 3.5, "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-07-27", "dayOfWeek": "Monday",
+          "workouts": [{ "id": "w12-mon", "sport": "rest", "type": "rest", "name": "Rest Day", "completed": false }]
+        },
+        {
+          "date": "2026-07-28", "dayOfWeek": "Tuesday",
+          "workouts": [{ "id": "w12-tue-run", "sport": "run", "type": "easy", "name": "Easy Run 4 km + 4 strides", "durationMinutes": 38, "distanceKm": 4.4, "primaryZone": "Z2", "humanReadable": "Short easy run. 4 strides at the end — fast feet, not max effort. This is your last real running session before race day. Keep it brief and light.", "completed": false }]
+        },
+        {
+          "date": "2026-07-29", "dayOfWeek": "Wednesday",
+          "workouts": [{ "id": "w12-wed-ride", "sport": "ride", "type": "aerobic", "name": "Easy Spin 25 min", "durationMinutes": 25, "primaryZone": "Z1", "humanReadable": "Very short easy spin — just keep the legs moving. HR under 125. Can be done on trainer or a flat easy loop.", "completed": false }]
+        },
+        {
+          "date": "2026-07-30", "dayOfWeek": "Thursday",
+          "workouts": [{ "id": "w12-thu-run", "sport": "run", "type": "easy", "name": "Easy Run 3 km + 4 strides", "durationMinutes": 28, "distanceKm": 3.4, "primaryZone": "Z2", "humanReadable": "15 min easy jog then 4 strides. The strides should feel effortless and fast — your legs are rested and ready. This is just a reminder to your nervous system that you're a runner.", "completed": false }]
+        },
+        {
+          "date": "2026-07-31", "dayOfWeek": "Friday",
+          "workouts": [{ "id": "w12-fri", "sport": "rest", "type": "rest", "name": "Rest Day — Race Prep", "description": "Lay out your kit. Confirm bib pickup, start time, and race logistics. Eat a carb-rich dinner (rice, pasta, bread — familiar foods only). Hydrate well all day. Early bedtime.", "completed": false }]
+        },
+        {
+          "date": "2026-08-01", "dayOfWeek": "Saturday",
+          "workouts": [{ "id": "w12-sat-shakeout", "sport": "run", "type": "shakeout", "name": "Pre-Race Shakeout 1.5 km + 3 strides", "durationMinutes": 18, "distanceKm": 1.5, "primaryZone": "Z1", "humanReadable": "10 min very easy jog near the race venue + 3 short strides. This is not exercise — it's just waking up the legs and checking your shoes. Nothing hard. Stay off your feet the rest of the day.", "completed": false }]
+        },
+        {
+          "date": "2026-08-02", "dayOfWeek": "Sunday",
+          "workouts": [{ "id": "w12-sun-race", "sport": "run", "type": "race", "name": "RACE DAY — Half Marathon 21.1 km", "durationMinutes": 150, "distanceKm": 21.1, "primaryZone": "Z3", "humanReadable": "YOU MADE IT. Here's your race-day plan:\n\nPre-race (3h before start): eat your practiced breakfast — 100g carbs, low fiber, easy to digest. Nothing new.\n\nWarm-up (20 min before): 8 min easy jog + dynamic stretches + 3 strides.\n\nRace pacing:\n  Km 1–5: Run easy, hold back. HR 130–145. Let others go — you'll see them again at km 15.\n  Km 6–15: Settle into race pace. HR 141–155. Aid stations: walk through to drink properly.\n  Km 16–21: Push. HR up to Z4 is fine now. This is what all those long runs built.\n\nWalk through aid stations only — no other walk breaks unless you've gone out too hard.\n\nYou have run 20 km. You are ready. Run your race.", "completed": false }]
+        }
+      ],
+      "summary": { "totalHours": 3.5, "bySport": { "run": { "sessions": 4, "hours": 1.4, "km": 9.3 }, "bike": { "sessions": 1, "hours": 0.4 }, "race": { "sessions": 1, "distanceKm": 21.1 } } }
+    }
+  ],
+  "raceStrategy": {
+    "event": {
+      "name": "Half Marathon", "date": "2026-08-02", "type": "half-marathon",
+      "distances": { "run": 21.1 }
+    },
+    "pacing": {
+      "km1to5":  { "targetHR": "130–145 bpm", "effort": "Easy, hold back",  "notes": "Conservative start. The most common HM mistake is going too fast early." },
+      "km6to15": { "targetHR": "141–155 bpm", "effort": "Race pace, controlled", "notes": "Walk through aid stations to drink properly. Fuel at km 7–8 if available." },
+      "km16to21":{ "targetHR": "155–175 bpm", "effort": "Push — leave nothing", "notes": "You've earned this. HR into Z4 is fine from km 18 onward." }
+    },
+    "nutrition": {
+      "preRace": "3 hours before: 100g carbs (rice, oats, banana, bread — whatever you practiced in Week 10 long run). Low fiber. No new foods.",
+      "during": { "carbsPerHour": 40, "fluidStrategy": "Sip water at every aid station. Walk through to drink without spilling.", "fuel": "Gel or banana at km 7–8 if available. Practiced in training only." },
+      "notes": "Nothing new on race day. Ever."
+    },
+    "taper": {
+      "startDate": "2026-07-20",
+      "volumeReduction": 40,
+      "notes": "Taper anxiety is real — your legs will feel heavy or restless. That's not de-training; it's supercompensation. Trust it. Maintain the strides each session to stay sharp without adding fatigue."
+    },
+    "kitChecklist": ["Race bib", "Tested shoes (same as Week 10 long run)", "Tested socks", "Tested shorts and top", "Sunscreen", "GPS watch charged", "Gels/fuel (same brand as training)", "Water bottle for warm-up"]
+  }
+}
