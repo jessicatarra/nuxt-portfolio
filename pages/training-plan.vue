@@ -168,7 +168,7 @@
             <div
               v-for="week in phase.weeks"
               :key="week.weekNumber"
-              :class="['week-card rounded-2xl border-2 relative', week.taper ? 'border-indigo-400' : week.cutback ? 'border-dashed opacity-90 ' + phaseBorder(phase.color) : phaseBorder(phase.color)]"
+              :class="['week-card rounded-2xl border-2 relative', week.taper ? 'border-indigo-400' : week.hasQualifier ? 'border-amber-400' : week.cutback ? 'border-dashed opacity-90 ' + phaseBorder(phase.color) : phaseBorder(phase.color)]"
             >
               <!-- Week card header -->
               <div class="p-5">
@@ -182,15 +182,25 @@
                     v-if="week.taper"
                     class="text-xs px-2 py-0.5 rounded-full font-semibold bg-indigo-100 text-indigo-700"
                   >Taper</span>
+                  <span
+                    v-if="week.hasQualifier"
+                    class="text-xs px-2 py-0.5 rounded-full font-semibold bg-amber-100 text-amber-700"
+                  >Qualifier</span>
                 </div>
                 <p class="text-xs opacity-40 mb-4 font-medium">{{ formatDateRange(week.startDate, week.endDate) }}</p>
 
                 <!-- Long run highlight -->
-                <div v-if="weekLongRun(week)" class="long-run-tile rounded-xl p-3 mb-3">
-                  <p class="text-xs font-bold uppercase tracking-wider opacity-50 mb-1">Sat — Long Run</p>
-                  <p :class="['font-bold leading-none', weekLongRun(week).km >= 20 ? 'text-3xl text-green-500' : 'text-2xl']">
+                <div v-if="weekLongRun(week)" :class="['rounded-xl p-3 mb-3', weekLongRun(week).isQualifier ? 'qualifier-run-tile' : 'long-run-tile']">
+                  <p class="text-xs font-bold uppercase tracking-wider opacity-50 mb-1">
+                    {{ weekLongRun(week).isQualifier ? 'Sat — Qualifier Simulation' : 'Sat — Long Run' }}
+                  </p>
+                  <p :class="['font-bold leading-none', weekLongRun(week).km >= 20 ? 'text-3xl text-green-500' : weekLongRun(week).isQualifier ? 'text-2xl text-amber-400' : 'text-2xl']">
                     {{ weekLongRun(week).km }} km
                     <span v-if="weekLongRun(week).km >= 20" class="ml-1 text-2xl">🎯</span>
+                    <span v-if="weekLongRun(week).isQualifier" class="ml-1 text-xl">⏱</span>
+                  </p>
+                  <p v-if="weekLongRun(week).isQualifier && weekLongRun(week).qualifier" class="text-xs font-bold text-amber-400 mt-1">
+                    &lt; {{ weekLongRun(week).qualifier.targetTime }}
                   </p>
                   <p class="text-xs opacity-40 mt-1">{{ weekLongRun(week).date }}</p>
                 </div>
@@ -412,7 +422,12 @@ export default {
         displayName: `Phase ${i + 1} — ${p.name}`,
         weeks: this.plan.weeks
           .filter(w => w.phase === p.name)
-          .map(w => ({ ...w, taper: p.name === 'Taper', cutback: w.isRecoveryWeek })),
+          .map(w => ({
+            ...w,
+            taper: p.name === 'Taper',
+            cutback: w.isRecoveryWeek,
+            hasQualifier: w.days.some(d => d.dayOfWeek === 'Saturday' && d.workouts.some(wo => wo.type === 'qualifier')),
+          })),
       }))
     },
   },
@@ -454,7 +469,12 @@ export default {
       if (!day) return null
       const wo = day.workouts.find(w => w.sport === 'run')
       if (!wo) return null
-      return { date: this.formatShortDate(day.date), km: wo.distanceKm }
+      return {
+        date: this.formatShortDate(day.date),
+        km: wo.distanceKm,
+        isQualifier: wo.type === 'qualifier',
+        qualifier: wo.qualifier || null,
+      }
     },
     weekTuesdayRun(week) {
       const day = week.days.find(d => d.dayOfWeek === 'Tuesday')
@@ -523,6 +543,10 @@ export default {
 .long-run-tile {
   background-color: var(--bg-primary);
   border: 1px solid var(--border-color);
+}
+.qualifier-run-tile {
+  background-color: var(--bg-primary);
+  border: 1px solid rgba(251, 191, 36, 0.4);
 }
 .week-stat-tile {
   background-color: var(--bg-primary);

@@ -335,7 +335,7 @@
         },
         {
           "date": "2026-06-20", "dayOfWeek": "Saturday",
-          "workouts": [{ "id": "w6-sat-run", "sport": "run", "type": "long", "name": "Long Run 15 km — 7:1 run-walk", "durationMinutes": 130, "distanceKm": 15, "primaryZone": "Z2", "humanReadable": "Run-walk: 7 min run / 1 min walk. At 15 km you'll be on your feet ~2h 10min. Fueling is important: water every 20–30 min, a gel or small snack at km 7 and km 12. Keep the effort conversational during every running interval — if you're breathing hard at km 4, slow down.", "completed": false }]
+          "workouts": [{ "id": "w6-sat-run", "sport": "run", "type": "qualifier", "name": "Qualifier Simulation — 15 km in < 1:51:00", "durationMinutes": 111, "distanceKm": 15, "primaryZone": "Z3", "qualifier": { "targetTime": "1:51:00", "targetPace": "7:24/km", "intervalPace": "7:05–7:15/km", "checkpoints": [{ "km": 5, "targetTime": "37:00" }, { "km": 10, "targetTime": "1:14:00" }], "note": "Prerequisite for race entry" }, "humanReadable": "QUALIFIER SIMULATION — prerequisite for race entry.\n\nTarget: 15 km in under 1:51:00 (7:24/km overall).\n\nStructure: 7 min run / 1 min walk. Running intervals at 7:05–7:15/km — race-adjacent effort, not easy.\n\nCheckpoints:\n  → 5 km in ~37:00\n  → 10 km in ~1:14:00\n  → Finish 15 km in under 1:51:00\n\nTreat this like race B: same morning routine, same shoes, same fuel. Start conservative — km 1–5 should feel almost too easy. The real effort is km 6–15.\n\nIf you miss the target: the plan continues and you'll be fitter. Aim to hit it.", "completed": false }]
         },
         {
           "date": "2026-06-21", "dayOfWeek": "Sunday",
